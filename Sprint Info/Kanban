@@ -1,0 +1,23 @@
+Kanban
+——————————————————————————————————————————
+Agile can be implemented using different frameworks, one of which is kanban
+
+Kanban is still an approach to managing projects that focuses on continious smaller releases that provides flexibility and the ability to adjust to new requriements.
+
+Kanban is good for projects that deal with interruption driven work 
+	(work that is difficult to predict in advance but needs a team in place to handle it when it comes up)
+	ie: service, platform support, etc
+
+If work priority keeps changing, dont know the items that will be worked on in the future, or you find it difficult to commit to a scope fo work for 2-4 weeks (depending on sprint length), kanban might be a better choise
+——————————————————————————————————————————
+Differences:
+
+1. Kanban is a framework that relies on visual tasks to manage workflows.
+2. There are no predefined roles (ie: no scrum master)
+3. tasks are shared by everyone instead of assigned owners
+4. work starts as soon as there is someone with capacity to work on it and ends when the task is completed
+5. the top of the backlog is always the next thing to be worked on
+6. timelines evolve on an 'as-needed' bases
+	ie: if a higher priority item comes, you can work on it when another task is finished (in scrum, it waits for the next sprint)
+7. productivity is measured by the cycle time of the task rather than the number of story points completed in each sprint
+——————————————————————————————————————————

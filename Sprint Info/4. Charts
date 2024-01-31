@@ -1,0 +1,19 @@
+Scrum Charts:
+——————————————————————————————————————————
+Burndown chart: 
+	shows the amount of work remaining on a project (the remaining effort)
+	the line goes from top to bottom as a team makes progress
+	only one line
+
+Burnup chart: 
+	shows how much work has been completed and the total scope of the project
+	the line climbs from the bottom upwards
+	harder to read as there are 3 lines
+		1. total effort required to finish sprint
+		2. work completed so far
+		3. ideal work pace needed to meet the project’s deadline
+
+Scope creep is a well know anti-pattern in agile development teams—it happens when more work is added during a sprint, which can disrupt agile estimations and processes.  
+
+When scope creep occurs, a burn-down chart will give the impression that the project is progressing as usual. However, on a burn-up chart, a dramatic increase in the scope of a project is clearly visible. 
+——————————————————————————————————————————

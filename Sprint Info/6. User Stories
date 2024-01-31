@@ -1,0 +1,16 @@
+User Stories:
+——————————————————————————————————————————
+User story: a general explanation of a feature written from the perspective of the end user or customer
+	The purpose of a user story is to articulate how a piece of work will deliver value back to the customer
+
+How to write: "As a [who], I want [what] so that [why]"
+	- the 'who' should just be a job title. We're after the persona of that person.
+	- the 'what' should be implementation free. Shouldnt be desribing the UI. Should focus what the overall what.
+——————————————————————————————————————————
+Notes: 
+
+	1. User stories should be small.
+	2. Every user story should have at least one acceptance criteria
+	3. it must be quantifiable and verifiable. This means that your requirement can’t be, for example, to make something prettier or more user-friendly, because there is no way to measure something’s attractiveness or user-friendliness. 
+
+——————————————————————————————————————————
