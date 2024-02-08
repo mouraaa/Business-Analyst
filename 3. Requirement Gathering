@@ -1,0 +1,52 @@
+Requirement Gathering:
+——————————————————————————————————————————
+1. Identify stakeholders
+	determine who will be affected by the project and who should provide input.
+
+2. Collect information using the below to gather information about the needs and expectations of stakeholders.
+	-interviews
+	-surveys
+	-open ended questionnares
+	-workshops
+	-etc
+
+3. Work with the product owner to prioritize requirements
+
+4. Document requirements in the URS (user requrements specifications)
+——————————————————————————————————————————
+Terminology:
+
+High level requriements: specifies requirements from a glance
+Low  level requriements: extremely detailed to meet the high level requirements
+
+Business Requirements:
+	-high-level statements of goals, objectives, and needs. 
+	-business requirements do not have any details or specific features. They just state the problem and the business objective to be achieved
+	-ex : increased revenue/throughput/customer reach, reduced expenses/errors, improved customer service, etc.
+
+User Requirements:
+	-reflects the needs of stakeholder groups and defines what they expect from a particular solution
+	-They're the bridge between generalized business requirements and specific solution requirements. 
+	-EX: the ability to create various reports, view order history and status, manage customer databases, etc.
+
+Solution requirements:
+	-describe specific characteristics that a product must have to meet the needs of the stakeholders and the business itself. 
+	-They fall into two large groups (functional and non functional requirements)
+
+——————————————————————————————————————————
+Systems need both functional requirements and non functional requirements to be usable. Without functional requirements the system will not work. Without non functional requirements, users will become frustrated
+
+1. Functional requirements: 
+	-explains how the system must work
+	-define what a product must do and what its features and functions are.
+
+
+2. Nonfunctional requirements: 
+	-describes the general properties and performance of a system
+	-explains how the system should perform
+	-speed: how fast the system performs certain activities
+	-availability: how long the system is available (ie: does it operate overnight, holidays, etc
+	-capacity: any limitations of the system
+	-reliability: how dependable the system is
+	-usability: how easy the system is to use for an end user
+——————————————————————————————————————————

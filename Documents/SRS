@@ -1,0 +1,25 @@
+SRS: System requirements specification 	
+——————————————————————————————————————————
+Once it's been identified ‘why’ the project is being undertaken through the BRD, it’s time to document ‘what’ requirements must be fulfilled to satisfy the business’s needs through documenting the broad layout, characteristics, and workflows of the software being developed. 
+
+Since a software’s major requirements are clearly organized and elaborated in an SRS, it’s commonly used for estimating the cost and effort required for developing that software. 
+
+The systems analyst of the project prepares the SRS; however, if a systems analyst is not available, it may even be prepared by the business analyst
+——————————————————————————————————————————
+Main Points:
+	-contains detailed functional and non-requirements 
+	-mentions hardware, software, etc
+	-elaborates the BRD’s high-level statements into a module, sub-module, and features without going in-depth on each page. 
+		ie: how the function is implemented
+	-primary audience is the project managers, SMEs (subject matter experts), technical and implementation lead responsible for overseeing the development of the listed functionalities.
+——————————————————————————————————————————
+EX: the proposed software to track the employees office time will contain the following modules:
+	1. Login Module: authenticates the user based on the login credentials entered
+	2. Administrator Module: contains the features that will allow an admin to manage the users (add user, edit users, delete users, add/edit users)
+	3. Employee Module: includes the features that will help the employee enter his effort details (enter/edit effort spent, task details, etc)
+	4. Reporting Module: exclusive to the administrator and allows him to extract aggregated time and effort reports against users, projects, and tasks. Furthermore, the admin should be able to export these reports in .xlsx and PDF formats.
+
+——————————————————————————————————————————
+Note: Some organizations or small projects dont create an SRS and just elaborate their BRD to accommodate the functional, non-functional requirements and use case details.
+
+——————————————————————————————————————————

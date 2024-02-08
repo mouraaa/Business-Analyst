@@ -1,0 +1,21 @@
+Business Process:
+——————————————————————————————————————————
+A collection of related, structured activities or tasks performed by people or equipment in which a specific sequence produces a service or product for a particular customer or customers
+
+You need to understand:
+	1. the entire E2E process
+	2. what are the events that trigger a change to happen because it has an implication in the E2E process
+	3. why these events are are being triggered in case you need to troubleshoot
+	4. limitations of each process
+	5. how to implement things into each process
+
+——————————————————————————————————————————
+Example: 
+
+Accenture is working with salesforce on an account opening process. The business wants us to enable a specific data field to be captured during account opening (ex: country of origination. this is bc it could be an internal or foreign business and these things have tax implications)
+
+Down the road, there were failures in the E2E process and we didnt know why. The field was working from A -> B but not from B -> F
+Turns out, the data field wasnt compatable with C-> D, hence the failure. It was only working from A -> B
+
+Hence, a BA needs to know that every data point is to support a process so you need to make sure that everything you do works with the entire process, not just from A->B and WHY
+——————————————————————————————————————————

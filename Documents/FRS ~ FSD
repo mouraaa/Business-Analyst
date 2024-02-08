@@ -1,0 +1,22 @@
+FRS: Functional Requirements Specification (also known as the FSD)
+——————————————————————————————————————————
+The FRS/FSD document is the most detailed and granular document of the three. It describes exactly ‘how’ the system is expected to function to satisfy all the requirements listed in the BRD and SRS.
+
+
+Main Points:
+	-contains granular functional requirements with data flow, process diagrams, UML diagrams, etc
+	-contains how the application functions based on the requested behavior
+	-elaborates on all requirements by specifying all the fields and user interactions on every page of the software being built. 
+
+Example: The Login module will contain the following fields
+	1. Enter Username: This field is a textbox that will allow the user to enter the username, which is their registered company’s email ID.
+	2. Enter Password: This field is a textbox that will allow the user to enter the password. The entered password should not be shown to the user and should be encrypted as a ‘*’.
+	3. Submit button: when clicked, validates entered credentials. If the username or the password is incorrect, the system should display an alert message ‘Incorrect Username or Password'
+
+——————————————————————————————————————————
+The development team refers to this project artifact to understand what exactly they have to build and the testing/QA team to know what are the different scenarios & test cases on which the software should be tested.
+
+The FRS is prepared by the business/systems analyst on the project, and post-completion, it’s reviewed by the project manager. After that, the FRS is shared with the clients for a final review, and once approved, this document becomes a standard basline document that defines the way the software is to function.
+
+The primary audience of the SRS is the technical leads, development teams, and testing teams.
+——————————————————————————————————————————
