@@ -1,0 +1,9 @@
+Database Schemas
+——————————————————————————————————————————
+Database Schemas: 
+	-visual representations of the blueprint/architecture of the database 
+	-defines how data is organized within a relational database
+	-includes table names, fields, data types, and the relationships between these entities, etc
+	-the process of database schema design is also known as data modeling.
+
+——————————————————————————————————————————
