@@ -1,0 +1,109 @@
+Swagger:
+——————————————————————————————————————————
+Swagger: API documentation that describes the structure of APIs so that people can read and use them.
+	ie: api paramaters, what it returns, does it need authorization, etc
+
+How To Read: https://support.smartbear.com/swaggerhub/docs/en/get-started/swagger--openapi-2-0--tutorial.html
+
+How to Create: https://swagger.io/resources/webinars/design-apis-with-openapi-specification/ 
+	-start from minute 12:30
+——————————————————————————————————————————
+How to Create: you should create the api documentation in yaml since its more human readable than json
+
+	1. click on the plus and click 'new API'
+		-open API version: 3.0 
+		-template: none
+
+	2. a few default tags will appear 
+		open api version:
+		info tag: 
+			version:
+			title:
+			description:
+
+	3. its always good to include the below tags underneath the info tag
+		termsOfService:
+		contact:
+			name:
+			url:
+			email:
+		license:
+			name:
+			url:
+
+note: as you type, the things you enter will start to visualize and appear on the right side of the screen
+
+	4. servers tag (you can have more than one)
+	   servers:
+	   	-url:
+	   	description:
+
+	   	-url:
+	   	description:
+
+	5. paths: endpoints that your API exposes that can be called
+
+	paths:
+		/employees: (name of the api. in this example its employees)
+		 get: (this is a get api)
+		 	description: (ex: obtain information about employees from HR database)
+		 	paramters: (used to define the object properties)
+		 		-name: (name of the first paramater) bodyLimit
+		 		in: (where the paramter will be located) query
+		 		description: (ex: the amount of employees from the HR database)
+		 		schema: (defines and enforce structure to the data)
+		 			type: (what type of paramater is required) integer
+		 			minimum: 10
+		 			maximum: 20
+		 			example: 15
+
+		 		-name: (name of the first paramater) pageLimit
+		 		in:(where the paramter will be located) query
+		 		description: (ex: the number of pages to return employee info)
+		 		schema: 
+		 			type: (what type of paramater is required) integer
+		 			minimum: 1
+		 			maximum: 5
+		 			example: 2
+
+			responses:
+			 200:
+			  description: successfull pull of employee info
+			  content: (the type of content the user will be receiving)
+			  	application/json: (will return the response in json)
+			  	 schema: (defines and enforce structure to the data)
+			  	 	type: (what type of paramater will return) array
+			  	 	items: (what will be returned)
+			  	 		properties: (used to define the object properties)
+			  	 		  id: 
+			  	 		    type: integer
+			  	 		    example: 4
+
+		  	 			  employee name: 
+		  	 			    type: string
+		  	 			    example: Ryan Pinkham
+
+		  	 			  employee title:
+		  	 			    type: string
+		  	 			    example: Market Manager
+
+    post:
+    	description: (ex: creates a new employee in the database)
+    	requestBody: (whats required in the body)
+    	  required: true
+    	  content: (the type of content the user will be receiving)
+    	  	application/json: (will return the response in json)
+    	  	  schema: (defines and enforce structure to the data)
+    	  	    type: (what type of paramater is required) object 
+    	  	    properties: (used to define the object properties)
+    	  	     id: 
+			  	   type: integer
+			  	   example: 4
+
+		  	 	 employee name: 
+		  	 	   type: string
+		  	 	   example: Ryan Pinkham
+
+		  	     employee title:
+		  	 		type: string
+		  	 		example: Market Manager

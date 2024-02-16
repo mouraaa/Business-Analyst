@@ -1,0 +1,29 @@
+API's and Postman
+——————————————————————————————————————————
+API: Application Programming Interfaces
+
+An API acts as the middleman between an application and web server that want to connect with each other to share information. They are a set of rules that specifies how two software programs should interact with each other. An API defines the kinds of calls or requests that can be made, how to make them, the data formats that should be used, the conventions to follow, etc. 
+
+API's are used to make a request to a resource on a server and the server responds with the requested information. The protocol used to transport the data is HTTP. (unless its an API only used to connect on the same computer)
+
+There are different types of API's.
+	1. Web API's can autoamtically convert request and response data into various formats (ie: JSON, XML, BSON, etc)
+	2. REST API's stands for Representational State Transfer. They can only support JSON data format.
+	3. many more i will not list
+——————————————————————————————————————————
+API Keys & Authentification:
+
+An API key is used to identify an application or user and is used for authentication in computer applications. 
+
+Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. 
+
+API Authentication makes a user's account more secure by adding that additional layer of authentication. Thus, making it harder for cybercriminals to access a user's private information. A website that uses API authentication, creates a sense of security for users and wins their trust.
+——————————————————————————————————————————
+Using Postman:
+
+Depending on the API, you might need to enter the API key in the paramater or header section.
+
+When you add parameters, they append at the end of the query string in the endpoint URL. Query string parameters appear after the question mark ? symbol and are separated by ampersands &. The order of query string parameters doesn’t matter. 
+
+You can also enter the params straight into the query search. If you enter them straight in the query search, they will append in the param section.
+——————————————————————————————————————————
