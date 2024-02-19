@@ -1,0 +1,62 @@
+Project Scope Definition
+
+https://asana.com/resources/project-scope
+——————————————————————————————————————————
+Project scope:
+	-sets boundaries on your project
+	-defines the goals, deadlines, and project deliverables
+
+Purpose: 
+	-manages stakeholder expectations
+	-reduces project risk
+	-budgets and plans resources
+	-prevents scope creep
+	-estableshes a process for chagne requests in complex projects
+	-ensures you hit your project goals and objectives without delay or overwork.
+
+Defining your project scope isn’t a one-person job. 
+Rather, you should align with any important project stakeholders and ensure that you’re all on the same page. 
+
+Scope Creep: continuous or uncontrolled growth in a project's scope. 
+	ie: when changes are made to the project scope without any control procedure like change requests
+
+——————————————————————————————————————————
+Project Scope Statement: a written document of your project scope. Depending on the complexity of your project, your scope statement could be a section of your project plan, or it could be its own stand-alone document. 
+
+Steps:
+	1. start with project objectives/deliverables
+	2. make a resource management plan (how you'll acquire, develop, use, manage, control, and release the resources you need for a particular project)
+		https://asana.com/resources/resource-management-plan
+	3. boundaries/risks (budgets, resources etc)
+	4. what will NOT be covered
+	5. write draft
+	6. establish a change request/control process if necessary
+	7. review with stakeholders
+
+based on project complexity, the project scope statement can be a bullet pointed list. a paragraph or a full blown SOW
+——————————————————————————————————————————
+Example: You're rebuilding your company website. Here’s what the project scope might look like:
+
+Project objectives: Transfer website backend onto CMS platform in order to improve page speed and flexibility.
+
+Resources:
+	-Web team (three people), 30 hours of work a week for 6 weeks
+	-Engineering manager (one person), 10 hours of work a week for 6 weeks
+	-IT & Legal review (two teams), five hours of ad hoc work a week
+	-$7,000 for CMS
+
+Deliverables:
+	-Training for all content writers in late May 2021
+	-Entire website on new CMS by June 2021
+
+Project roadmap and timeline:
+	-April 26: Begin scoping CMS
+	-May 10: IT & Legal review
+	-May 17th–June 3rd: Web team transfer
+	-May 31st: Content writers’ training
+	-June 4th: CMS is live
+
+Out of scope:
+	-New DAM system
+	-Customizable web pages on new CMS
+——————————————————————————————————————————
