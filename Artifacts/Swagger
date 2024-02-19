@@ -45,65 +45,176 @@ note: as you type, the things you enter will start to visualize and appear on th
 
 	paths:
 		/employees: (name of the api. in this example its employees)
-		 get: (this is a get api)
-		 	description: (ex: obtain information about employees from HR database)
-		 	paramters: (used to define the object properties)
-		 		-name: (name of the first paramater) bodyLimit
-		 		in: (where the paramter will be located) query
-		 		description: (ex: the amount of employees from the HR database)
-		 		schema: (defines and enforce structure to the data)
-		 			type: (what type of paramater is required) integer
-		 			minimum: 10
-		 			maximum: 20
-		 			example: 15
+			get: (this is a get api)
+			 	description: (ex: obtain information about employees from HR database)
+			 	paramters: (used to define the object properties)
+			 	-	name: (name of the first paramater) bodyLimit
+			 		in: (where the paramter will be located) query
+			 		description: (ex: the amount of employees from the HR database)
+			 		schema: (defines and enforce structure to the data)
+			 			type: (what type of paramater is required) integer
+			 			minimum: 10
+			 			maximum: 20
+			 			example: 15
 
-		 		-name: (name of the first paramater) pageLimit
-		 		in:(where the paramter will be located) query
-		 		description: (ex: the number of pages to return employee info)
-		 		schema: 
-		 			type: (what type of paramater is required) integer
-		 			minimum: 1
-		 			maximum: 5
-		 			example: 2
+			 	-	name: (name of the first paramater) pageLimit
+			 		in: (where the paramter will be located) query
+			 		description: (ex: the number of pages to return employee info)
+			 		schema: (defines and enforce structure to the data)
+			 			type: (what type of paramater is required) integer
+			 			minimum: 1
+			 			maximum: 5
+			 			example: 2
 
-			responses:
-			 200:
-			  description: successfull pull of employee info
-			  content: (the type of content the user will be receiving)
-			  	application/json: (will return the response in json)
-			  	 schema: (defines and enforce structure to the data)
-			  	 	type: (what type of paramater will return) array
-			  	 	items: (what will be returned)
-			  	 		properties: (used to define the object properties)
-			  	 		  id: 
-			  	 		    type: integer
-			  	 		    example: 4
+				responses:
+					200:
+						description: successfull pull of employee info
+					  	content: (the type of content the user will be receiving)
+						  	application/json: (will return the response in json)
+						  		schema: (defines and enforce structure to the data)
+						  	 		type: (what type of paramater will return) array
+						  	 		items: (what will be returned)
+							  	 		properties: (used to define the object properties)
+							  	 		  id: 
+							  	 		  	type: integer
+							  	 		    example: 4
 
-		  	 			  employee name: 
-		  	 			    type: string
-		  	 			    example: Ryan Pinkham
+						  	 			  employee name: 
+						  	 			    type: string
+						  	 			    example: Ryan Pinkham
 
-		  	 			  employee title:
-		  	 			    type: string
-		  	 			    example: Market Manager
+						  	 			  employee title:
+						  	 			    type: string
+						  	 			    example: Market Manager
 
-    post:
-    	description: (ex: creates a new employee in the database)
-    	requestBody: (whats required in the body)
-    	  required: true
-    	  content: (the type of content the user will be receiving)
-    	  	application/json: (will return the response in json)
-    	  	  schema: (defines and enforce structure to the data)
-    	  	    type: (what type of paramater is required) object 
-    	  	    properties: (used to define the object properties)
-    	  	     id: 
-			  	   type: integer
-			  	   example: 4
+		    post:
+		    	description: (ex: creates a new employee in the database)
+		    	requestBody: (whats required in the body)
+		    	 	required: true
+		    	 	content: (the type of content the user will be receiving)
+		    	  		application/json: (will return the response in json)
+			    	  	  	schema: (defines and enforce structure to the data)
+				    	  	    type: (what type of paramater is required) object 
+				    	  	    properties: (used to define the object properties)
+				    	  	    	id: 
+								  	   type: integer
+								  	   example: 4
 
-		  	 	 employee name: 
-		  	 	   type: string
-		  	 	   example: Ryan Pinkham
+							  	 	employee name: 
+							  	 	   type: string
+							  	 	   example: Ryan Pinkham
 
-		  	     employee title:
-		  	 		type: string
-		  	 		example: Market Manager
+							  	    employee title:
+							  	 	   type: string
+							  	 	   example: Market Manager
+						
+						application/xml: (will return the response in XML)
+			    	  	  	schema: (defines and enforce structure to the data)
+				    	  	    type: (what type of paramater is required) object 
+				    	  	    properties: (used to define the object properties)
+				    	  	    	id: 
+								  	   type: integer
+								  	   example: 4
+
+							  	 	employee name: 
+							  	 	   type: string
+							  	 	   example: Ryan Pinkham
+
+							  	    employee title:
+							  	 	   type: string
+							  	 	   example: Market Manager							  	 	   
+
+
+  		/employees/{id}:
+		    get:
+		    	description: Retrieves information about a specific employee.
+		     	parameters: 
+			        - in: path
+			          name: id
+			          required: true
+			          description: The ID of the employee.
+			          schema:
+			          	type: integer
+			            example: 72193
+			        
+			    responses:
+			        200: 
+			         	description: Success
+			        	content:
+			            	application/json:
+			              		schema:
+			                		type: object
+					                properties:
+					                  id:
+					                    type: integer
+					                    example: 72193
+					                  
+					                  employee name:
+					                    type: string
+					                    example: Amr Abedo
+					                    
+					                  employee title:
+					                    type: string
+					                    example: Marketing Manager
+
+							application/xml: (will return the response in XML)
+			    	  	  		schema: (defines and enforce structure to the data)
+				    	  	    	type: (what type of paramater is required) object 
+					    	  	    properties: (used to define the object properties)
+					    	  	      id: 
+								  	    type: integer
+								  	    example: 4
+
+							  	 		employee name: 
+							  	 	    type: string
+							  	 	    example: Ryan Pinkham
+
+							  	    	employee title:
+							  	 	    type: string
+							  	 	    example: Market Manager						                    
+
+——————————————————————————————————————————
+Sometimes there will be many reusable parts of the swagger code. In the above code, we used id, employee name and employee title 3 times. In a real world example, this can be used 100s of times. Instead of typing this over and over again, we can use components. 
+
+In this case we write an employee schema under components that we can reuse.
+
+components:
+	schemas:
+
+		Employee:
+			description: model containing employee info
+			properties: (used to define the object properties)
+  	 		 	id: 
+	  	 		  type: integer
+	  	 		   example: 4
+
+  	 			  employee name: 
+  	 			    type: string
+  	 			    example: Ryan Pinkham
+
+  	 			  employee title:
+  	 			    type: string
+  	 			    example: Market Manager
+
+
+You can also create another schema based on another schema by referencing it.
+
+		Employees:
+		      description: Array of employee info
+		      type: array
+		      items:
+		        $ref: '#/components/schemas/Employee'
+
+
+After we write this schema, we would use the following syntax to refer to the schema when needed. Example below:
+
+responses:
+    200: 
+     	description: Success
+    	content:
+        	application/json:
+          		schema:
+            		type: object
+	                $ref: '#/components/schemas/Employee'
+
+——————————————————————————————————————————	                

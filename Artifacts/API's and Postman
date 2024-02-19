@@ -21,9 +21,42 @@ API Authentication makes a user's account more secure by adding that additional 
 ——————————————————————————————————————————
 Using Postman:
 
-Depending on the API, you might need to enter the API key in the paramater or header section.
-
-When you add parameters, they append at the end of the query string in the endpoint URL. Query string parameters appear after the question mark ? symbol and are separated by ampersands &. The order of query string parameters doesn’t matter. 
-
-You can also enter the params straight into the query search. If you enter them straight in the query search, they will append in the param section.
+Depending on the API, you might need to enter the API key in the paramater or URL section.
 ——————————————————————————————————————————
+Paramaters: 
+
+paramters:
+ - name:
+   in: (this is where you specify the paramter type)
+
+Path parameters 
+	-appears before the ‘?’ in the URL
+	-separated by '/'
+	-identifies a specific resource or collection of resources. similar to folders and subfolders in a library - guiding you to the exact book you want
+	-ex: /products/shoes/sneakers identifies the category of "sneakers" within the "shoes" section of the "products" resource.
+	-generally/most of the time requried
+	-you can add this to the link via ':name_you_want_to_give' and have the key the same name as name_you_want_to_give and provide the value you want 
+
+Query parameters:
+	-appear after the ‘?’ in the URL 
+	-separated by ampersands (&)
+	-order of the paramters dont matter
+	-modifies or filters the identified resource. Think of them like search filters that refine the content within a folder.
+	-ex: /products/shoes/sneakers?size=10&color=blue filters the "sneakers" resource to show only shoes in size 10 and the color blue.
+	-generally/most of the time they are optional
+	-when you add parameters, they append at the end of the query string in the endpoint URL
+	-you can also enter the params straight into the URL. If you enter them straight in the URL, they will append in the param section.
+
+——————————————————————————————————————————
+Data Types: https://swagger.io/docs/specification/data-models/data-types/
+
+schema: 
+  type: (this is where you specofy the data type)
+
+the data type of a schema can be one of the below:
+	1. string
+	2. number (can be used for integers or floating numbers ie numbers with decimals)
+	3. integer
+	4. boolean
+	5. array
+	6 object
