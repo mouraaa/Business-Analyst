@@ -18,8 +18,6 @@ An API key is used to identify an application or user and is used for authentica
 Almost every API has a method in place to authenticate requests. You usually have to provide an API key in your requests to get a response. 
 
 API Authentication makes a user's account more secure by adding that additional layer of authentication. Thus, making it harder for cybercriminals to access a user's private information. A website that uses API authentication, creates a sense of security for users and wins their trust.
-——————————————————————————————————————————
-Using Postman:
 
 Depending on the API, you might need to enter the API key in the paramater or URL section.
 ——————————————————————————————————————————
@@ -34,7 +32,7 @@ Path parameters
 	-separated by '/'
 	-identifies a specific resource or collection of resources. similar to folders and subfolders in a library - guiding you to the exact book you want
 	-ex: /products/shoes/sneakers identifies the category of "sneakers" within the "shoes" section of the "products" resource.
-	-generally/most of the time requried
+	-always requried
 	-you can add this to the link via ':name_you_want_to_give' and have the key the same name as name_you_want_to_give and provide the value you want 
 
 Query parameters:
@@ -43,20 +41,53 @@ Query parameters:
 	-order of the paramters dont matter
 	-modifies or filters the identified resource. Think of them like search filters that refine the content within a folder.
 	-ex: /products/shoes/sneakers?size=10&color=blue filters the "sneakers" resource to show only shoes in size 10 and the color blue.
-	-generally/most of the time they are optional
+	-generally/most of the time they are optional but can also be required if necessary
 	-when you add parameters, they append at the end of the query string in the endpoint URL
 	-you can also enter the params straight into the URL. If you enter them straight in the URL, they will append in the param section.
 
 ——————————————————————————————————————————
-Data Types: https://swagger.io/docs/specification/data-models/data-types/
+Schemas and Paramater Types: 
+
+https://swagger.io/docs/specification/data-models/data-types/
+https://swagger.io/docs/specification/describing-parameters/#header-parameters
 
 schema: 
-  type: (this is where you specofy the data type)
+  type: (this is where you specify the data type)
 
-the data type of a schema can be one of the below:
+Schema Paramater Data Types:
 	1. string
 	2. number (can be used for integers or floating numbers ie numbers with decimals)
 	3. integer
 	4. boolean
 	5. array
 	6 object
+
+You can further use the below to add info/restrict your data types
+	1. minimum: integer
+	2. maximum: integer
+	3. example:
+	4. examples:  
+	5. default (a value that the server uses if the parameter is not sent by the client)
+	6. enum (used to restrict a parameter to a fixed set of values. The enum values must be the same type as a parameter data type. If you only put one, then it would be considered as a constant paramater)
+	7. depracated: boolean
+	8. allowEmptyValue: boolean
+	9. nullable: boolean
+——————————————————————————————————————————
+HTTP Status Codes:
+
+Under responses, each response definition starts with a status code. An operation typically returns one successful status code and one or more error statuses. Each response status requires a description.
+
+To define a range of response codes, you may use the following range definitions: 1XX, 2XX, 3XX, 4XX, and 5XX.
+
+  responses:
+    '200':
+      description: Succesfull
+    '400':
+      description: Bad request. User ID must be an integer and larger than 0.
+    '401':
+      description: Authorization information is missing or invalid.
+    '404':
+      description: A user with the specified ID was not found.
+    '5XX':
+      description: Unexpected error.
+——————————————————————————————————————————     

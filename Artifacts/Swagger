@@ -53,6 +53,7 @@ note: as you type, the things you enter will start to visualize and appear on th
 			 		description: (ex: the amount of employees from the HR database)
 			 		schema: (defines and enforce structure to the data)
 			 			type: (what type of paramater is required) integer
+			 			default: 10 (a value that the server uses if the parameter is not sent by the client)
 			 			minimum: 10
 			 			maximum: 20
 			 			example: 15
@@ -62,6 +63,7 @@ note: as you type, the things you enter will start to visualize and appear on th
 			 		description: (ex: the number of pages to return employee info)
 			 		schema: (defines and enforce structure to the data)
 			 			type: (what type of paramater is required) integer
+			 			default: 1 (a value that the server uses if the parameter is not sent by the client)
 			 			minimum: 1
 			 			maximum: 5
 			 			example: 2
