@@ -11,22 +11,24 @@ Steps:
 	2. meet with the people who know the process best
 		Have them fill in the gaps and correct mistakes in your draft. Encourage them to share the smallest of details so that your process flow is as complete as possible. Every little detail can hold within it an opportunity to change things for the better.
 ——————————————————————————————————————————
-Questions to ask & Info to add on the map:
+Questions to ask & info to add on the map:
 
 	1. where does the process begin and end?
-	2. what steps need are between the beginning and the end?
+	2. what steps are between the beginning and the end?
 	3. what are the inputs and outputs of the process?
 	4. who needs to do what and when do they need to do it?
 ——————————————————————————————————————————
 Best Practices:
 
 	1. Map the correct processes
-		Processes that reflect how decisions are made may not be the best processes to map because they're limited in steps, and may not offer the most impact for your time. Sometimes the inefficiencies in your processes are outside of the process itself. It then becomes critical that you review any intersecting (secondary) processes as well.
 	2. Don’t fix your processes until they are fully mapped
 	3. ask people who are involved in the process
 	4. include all key stakeholders to avoid missing out on important steps
-	5. keep it simple. should be easy to read by anyone
-	
+	5. use the appropriate/correct symbols on your diagram
+	6. keep it simple. should be easy to read by anyone
+
+——————————————————————————————————————————	
+Note: Processes that reflect how decisions are made may not be the best processes to map because they're limited in steps, and may not offer the most impact for your time. Sometimes the inefficiencies in your processes are outside of the process itself. It then becomes critical that you review any intersecting (secondary) processes as well.	
 ——————————————————————————————————————————
 Benefits:
 
@@ -38,3 +40,8 @@ Benefits:
 You can use the UPN model to draw business process maps.
 
 https://trailhead.salesforce.com/content/learn/modules/business-process-mapping/understand-universal-process-notation?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-business-analyst-credential
+——————————————————————————————————————————
+Chart Symbols:
+
+https://www.lucidchart.com/pages/flowchart-symbols-meaning-explained
+——————————————————————————————————————————
