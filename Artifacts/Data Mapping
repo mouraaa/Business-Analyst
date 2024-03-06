@@ -1,11 +1,13 @@
 Data Mapping
 ——————————————————————————————————————————
-The process of matching fields from one database to another. It's the first to facilitate data migration, data integration, and other data management tasks.
+The process of matching fields from one database to another.
 
 Before data can be analyzed for business insights, it must be homogenized in a way that makes it accessible to decision makers. 
 Data comes from many sources, and each source can define similar data points in different ways
 
-EX: the state field in a source system may show Illinois as "Illinois," but the destination may store it as "IL."
+examples: 
+	-the state field in a source system may show Illinois as "Illinois," but the destination may store it as "IL." 
+	-the zipcode field in a source system exists but doesn't exist in the destination system
 ——————————————————————————————————————————
 Data migration:
 
