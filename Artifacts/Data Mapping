@@ -1,0 +1,51 @@
+Data Mapping
+——————————————————————————————————————————
+The process of matching fields from one database to another. It's the first to facilitate data migration, data integration, and other data management tasks.
+
+Before data can be analyzed for business insights, it must be homogenized in a way that makes it accessible to decision makers. 
+Data comes from many sources, and each source can define similar data points in different ways
+
+EX: the state field in a source system may show Illinois as "Illinois," but the destination may store it as "IL."
+——————————————————————————————————————————
+Data migration:
+
+-the process of moving data from one system to another as a one-time event. 
+-generally, this is data that doesn't change over time. 
+-after the migration, the destination is the new source of migrated data, and the original source is retired. 
+-data mapping supports the migration process by mapping source fields to destination fields.
+——————————————————————————————————————————
+Data integration:
+
+-an ongoing process of regularly moving data from one system to another.
+-the integration can be scheduled, such as quarterly or monthly, or can be triggered by an event.
+-data is stored and maintained at both the source and destination.
+-like data migration, data maps for integrations match source fields with destination fields.
+——————————————————————————————————————————
+Data transformation:
+
+-the process of converting data from a source format to a destination format.
+-this can include cleansing data by changing data types, deleting nulls or duplicates, aggregating data, enriching the data, or other transformations. -ex: "Illinois" can be transformed to "IL" to match the destination format. 
+-these transformation formulas are part of the data map. 
+-as data is moved, the data map uses the transformation formulas to get the data in the correct format for analysis.
+——————————————————————————————————————————
+Data warehousing:
+
+-if the goal is to pool data into one source for analysis or other tasks, it is generally pooled in a data warehouse.
+-when you run a query, a report, or do analysis, the data comes from the warehouse. 
+-data in the warehouse is already migrated, integrated, and transformed. 
+-data mapping ensures that as data comes into the warehouse, it gets to its destination the way it was intended.
+——————————————————————————————————————————
+Steps to Data Mapping:
+
+	1: Define the data to be moved, including the tables, the fields within each table, and the format of the field after it's moved. For data integrations, the frequency of data transfer is also defined.
+
+	2: Map the Data by matching source fields to destination fields.
+
+	3: If a field requires transformation, the transformation formula or rule is coded.
+
+	4: Test using sample data from the source, run the transfer to see how it works and make adjustments as necessary.
+
+	5: Schedule and deploy the migration or integration go-live event.
+
+	6: Maintain and Update — For ongoing data integration, the data map is a living entity that will require updates and changes as new data sources are added, as data sources change, or as requirements at the destination change.
+——————————————————————————————————————————
