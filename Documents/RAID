@@ -1,10 +1,11 @@
+RAID Document:
 ——————————————————————————————————————————
 A RAID log is a structured document that keeps track of Risks, Assumptions, Issues, and Dependencies. 
 It's the dashboard that offers a quick glimpse into the health of your project.
 
-RAID is not just a buzzword to throw around in meetings; it's a framework that helps you identify, assess, and prioritize various elements of project management. It offers a cohesive approach to addressing project challenges.	
+it's a framework that helps you identify, assess, and prioritize various elements of project management. 
 ——————————————————————————————————————————	
-Risks: an uncertain event that, if it occurs, can positively or negatively impact a project's objectives
+Risks: an uncertain event that, if it occurs, can negatively or positively impact a project's objectives
 
 Examples of Common Risks:
 	budget overruns
