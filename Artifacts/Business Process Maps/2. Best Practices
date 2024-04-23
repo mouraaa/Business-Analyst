@@ -1,0 +1,31 @@
+Best Practices for drawing:
+——————————————————————————————————————————
+	1. keep it simple. should be easy to read by anyone
+	2. use straight arrows, and right angle arrows. never use curved.
+	3. never cross data flow arrows.
+	4. save the arrows for last. dont try to add them as you go along. itll get really annoying really fast
+	5. dont use full sentences in the process boxes. should be very short and high level (verb and a noun)
+	6. use the appropriate/correct symbols on your diagram
+	7. reccomendations: (these are not musts, but nice to have's if it makes sense)
+		-have the start symbol on its own row at the very top leftso people can naturally find the start of the process
+		-have the end symbol on its own row at the very bottom right people can naturally find the end of the process
+		-have the start/end symbols in a separate/green/beige color
+——————————————————————————————————————————
+Questions to ask & info to add on the map:
+
+	1. where does the process start and end?
+	2. what steps are between the beginning and the end?
+	3. what are the inputs and outputs of the process?
+	4. who needs to do what and when do they need to do it?
+	
+——————————————————————————————————————————
+Keep in mind:
+
+	1. create an initial draft
+	2. ask people who are involved in the process
+		-have them fill in the gaps and correct mistakes in your draft.
+		-encourage them to share the smallest of details so that your process flow is as complete as possible.
+		-every little detail can hold within it an opportunity to change things for the better.
+	3. include all key stakeholders to avoid missing out on important steps
+	4. don’t fix your processes until they are fully mapped
+——————————————————————————————————————————
