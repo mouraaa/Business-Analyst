@@ -1,31 +1,59 @@
-Best Practices for drawing:
+Creating a Process Map
 ——————————————————————————————————————————
+The 6 steps of creating a flowchart:
+
+	1. understand the end goal
+		-if theres no benefit of making one, why are we creating it?
+
+	2. determine scope
+		-processes naturally interacts with other processes
+		-ex: the process of driving a car starts with turning the engine on, but what about opening the car door? locating the car keys? etc
+		-ask where does this SPECIFIC process start/end in this scope?
+
+	3. brainstorm tasks
+		-use a whiteboard and create an initial draft
+		-use sticky notes bc they can be easily moved around when other things are brought up
+		-meet with the users of a process, not management
+			a) management will tell you how a process should be
+			b) users will tell you how the process is ACTUALLY done
+		-what are the inputs and outputs of the process?
+
+	4. identify owners
+		-ask people who are involved in the process
+		-have them fill in the gaps and correct mistakes in your draft
+		-encourage them to share the smallest of details so that your process flow is as complete as possible.
+		-every little detail can hold within it an opportunity to change things for the better.
+		-ask who is responsible for actually doing each task?
+		-you might find ineffencies here bc
+			a) some tasks arent being done (one person will say i thought you did this while the other will say i thought you did this)
+			b) some tasks are being done by 2 groups/people twice
+			c) they say a person/group that you didnt invite in the original brainstorming session so you need to bring them in the next one
+
+
+	5. document into flowchart
+		-dont use a tool right away. 
+		-you will waste a lot of time formatting, removing, moving, etc  
+		-only use when youre 90% done
+
+	6. review with others
+		-get it reviewed by stakeholders and approved
+
+——————————————————————————————————————————
+Best Practices for drawing:
+
 	1. keep it simple. should be easy to read by anyone
 	2. use straight arrows, and right angle arrows. never use curved.
 	3. never cross data flow arrows.
 	4. save the arrows for last. dont try to add them as you go along. itll get really annoying really fast
 	5. dont use full sentences in the process boxes. should be very short and high level (verb and a noun)
+	6. never use specifics om the map
+		-ex: username = admin & pass = 123? 
+		-this is a breach of security data
+		-also if the credentials are changed, the process map has to change.
+		-should just be "credentials are valid?"
 	6. use the appropriate/correct symbols on your diagram
 	7. reccomendations: (these are not musts, but nice to have's if it makes sense)
 		-have the start symbol on its own row at the very top leftso people can naturally find the start of the process
 		-have the end symbol on its own row at the very bottom right people can naturally find the end of the process
 		-have the start/end symbols in a separate/green/beige color
-——————————————————————————————————————————
-Questions to ask & info to add on the map:
-
-	1. where does the process start and end?
-	2. what steps are between the beginning and the end?
-	3. what are the inputs and outputs of the process?
-	4. who needs to do what and when do they need to do it?
-	
-——————————————————————————————————————————
-Keep in mind:
-
-	1. create an initial draft
-	2. ask people who are involved in the process
-		-have them fill in the gaps and correct mistakes in your draft.
-		-encourage them to share the smallest of details so that your process flow is as complete as possible.
-		-every little detail can hold within it an opportunity to change things for the better.
-	3. include all key stakeholders to avoid missing out on important steps
-	4. don’t fix your processes until they are fully mapped
 ——————————————————————————————————————————
