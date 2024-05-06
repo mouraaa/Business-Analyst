@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-01T16:26:59.499Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="xjLi6dpfwJRUxcsxv2jc" version="24.3.1" type="device" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-05-01T16:30:17.175Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="btctjjc3Sh-TLac4FdeF" version="24.3.1" type="device" pages="2">
   <diagram id="b2fd9d0b-2112-5cd9-0d75-b0b2d4f76a37" name="Page-1">
     <mxGraphModel dx="1440" dy="738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="#ffffff" math="0" shadow="0">
       <root>
@@ -161,7 +161,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FhLBadpY8qUJPjOp5VIs-1" value="Pool" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;" vertex="1" parent="1">
+        <mxCell id="FhLBadpY8qUJPjOp5VIs-1" value="Insurance Claim Process" style="swimlane;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=1;startSize=20;horizontalStack=0;html=1;" vertex="1" parent="1">
           <mxGeometry x="160" y="180" width="1390" height="820" as="geometry" />
         </mxCell>
         <mxCell id="FhLBadpY8qUJPjOp5VIs-2" value="User" style="swimlane;startSize=20;horizontal=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="FhLBadpY8qUJPjOp5VIs-1">
@@ -309,10 +309,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="RIomuH9MhVRcJrgto3EU-1" value="&lt;font style=&quot;font-size: 21px&quot;&gt;Insurance Claims Process&lt;br&gt;&lt;/font&gt;" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;" vertex="1" parent="1">
-          <mxGeometry x="1440" y="30" width="260" height="20" as="geometry" />
+          <mxGeometry x="1290" y="30" width="260" height="20" as="geometry" />
         </mxCell>
         <mxCell id="RIomuH9MhVRcJrgto3EU-2" value="Amr Abedo" style="text;html=1;resizable=0;points=[];autosize=1;align=left;verticalAlign=top;spacingTop=-4;strokeWidth=3;fontSize=14;" vertex="1" parent="1">
-          <mxGeometry x="1600" y="70" width="90" height="20" as="geometry" />
+          <mxGeometry x="1460" y="70" width="90" height="20" as="geometry" />
         </mxCell>
         <mxCell id="UVDuDwVQdrbpsUyFpwZ3-1" value="End" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="1030" y="1030" width="100" height="60" as="geometry" />
