@@ -19,43 +19,8 @@ Tools to draw process maps:
 	2. Visio 
 	3. Lucidchart
 ——————————————————————————————————————————
-Swimlane Flowcharts: 
-
-used to represent who owns what part of the process.
-	-can be a specific user (administrator, salesperson, manager) 
-	-can be a department (administration, sales, management)
-——————————————————————————————————————————
-Notes:
-
-	-There can be multiple 'starts' depending on the number of possible inputs
-		EX: an "alert response" process can start in many ways depending on how the alert came through 
-			ie: caller, police, etc
-
-		the multiple starts will join together once the process starts, but the 'starts' might be in multiple swimlanes
-
-	-the starts can be at the bottom and can work their way to tne end to the top. 
-
-——————————————————————————————————————————
-Levels: process maps can have multiple levels. 
-
-	1. Level 0 describes the highest level of the process with very few details.
-		-should only have very few symbols (start, end and process tasks)
-		-shouldn't have decisions, store data, input/output, etc
-		-each task is represented with whole numbers (1.0, 2.0, etc)
-
-	2. Level 1 describes level 0 in more detail 
-		-each process is delved into deeper
-		-each task is represented with a decimal (1.1, 1.2, etc)
-
-	3. level 2 describes level 1 in more detail
-		-each level 1 task  is delved into deeper
-		-each task is represented with a letter (1.1a, 1.1b, etc)
-——————————————————————————————————————————	
 You can use the UPN model to draw business process maps.
 
 https://trailhead.salesforce.com/content/learn/modules/business-process-mapping/understand-universal-process-notation?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-business-analyst-credential
 ——————————————————————————————————————————
-Chart Symbols:
 
-https://www.lucidchart.com/pages/flowchart-symbols-meaning-explained
-——————————————————————————————————————————
