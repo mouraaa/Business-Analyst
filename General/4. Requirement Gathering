@@ -8,7 +8,7 @@ Requirement Gathering:
 	-surveys
 	-open ended questionnares
 	-workshops
-	-etc
+	-document analysis: gathering information by analyzing already existing documents
 
 3. Work with the product owner to prioritize requirements
 
@@ -44,9 +44,24 @@ Systems need both functional requirements and non functional requirements to be 
 2. Nonfunctional requirements: 
 	-describes the general properties and performance of a system
 	-explains how the system should perform
-	-speed: how fast the system performs certain activities
-	-availability: how long the system is available (ie: does it operate overnight, holidays, etc
-	-capacity: any limitations of the system
-	-reliability: how dependable the system is
-	-usability: how easy the system is to use for an end user
+	-Examples:
+		-speed: how fast the system performs certain activities
+		-availability: how long the system is available (ie: does it operate overnight, holidays, etc
+		-capacity: any limitations of the system (ex: how many users on the website at one time)
+		-reliability: how dependable the system is
+		-usability: how easy the system is to use for an end user
+			-diff users have diff levels of computer literacy
+			-some users are vision impaired, color blind, etc
+		-security
+
+Non functional requirements are harder to capture since they are less well defined. 
+However, think of all the different scenarios and types of users that will be using the system and what their needs can be.
+——————————————————————————————————————————
+Requirement vs Need:
+
+-needs are broader statements that describe the underlying desires or objectives that customer is trying to address. 
+
+-requirements are the specific, measurable, time bound features, functions, or characteristics that a product or service must have to meet the customer's needs.
+
+In order to create effective requirements, the business analyst must understand the needs of the business and then translate them into specific, measurable, attainable, relevant, and time-bound requirements.
 ——————————————————————————————————————————

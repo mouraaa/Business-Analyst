@@ -7,11 +7,11 @@ Since a software’s major requirements are clearly organized and elaborated in 
 The systems analyst of the project prepares the SRS; however, if a systems analyst is not available, it may even be prepared by the business analyst
 ——————————————————————————————————————————
 Main Points:
-	-contains detailed functional and non-requirements 
+	-contains detailed functional and non-functional requirements 
 	-mentions hardware, software, etc
 	-elaborates the BRD’s high-level statements into a module, sub-module, and features without going in-depth on each page. 
 		ie: how the function is implemented
-	-primary audience is the project managers, SMEs (subject matter experts), technical and implementation lead responsible for overseeing the development of the listed functionalities.
+	-primary audience is the project managers, SMEs (subject matter experts), technical and implementation leads responsible for overseeing the development of the listed functionalities.
 ——————————————————————————————————————————
 EX: the proposed software to track the employees office time will contain the following modules:
 	1. Login Module: authenticates the user based on the login credentials entered

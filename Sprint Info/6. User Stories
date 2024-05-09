@@ -4,13 +4,36 @@ User story: a general explanation of a feature written from the perspective of t
 	The purpose of a user story is to articulate how a piece of work will deliver value back to the customer
 
 How to write: "As a [who], I want [what] so that [why]"
-	- the 'who' should just be a job title. We're after the persona of that person.
+	- the 'who' should not just be a job title. We're after the persona of that person.
 	- the 'what' should be implementation free. Shouldnt be desribing the UI. Should focus what the overall what.
 ——————————————————————————————————————————
-Notes: 
+User stories should follow the acronym INVEST
 
-	1. User stories should be small.
-	2. Every user story should have at least one acceptance criteria
-	3. it must be quantifiable and verifiable. This means that your requirement can’t be, for example, to make something prettier or more user-friendly, because there is no way to measure something’s attractiveness or user-friendliness. 
+Independent:
+	-a user story should not depend on other user stories. 
+	-otherwise, it risks becoming a blocker for other features.
+	-can be prioritized and worked on independently.
 
+Negotiable:
+	-user stories should be written in a way that leaves room for negotiation. 
+	-they should not be too specific or too detailed. 
+	-allows for flexibility and allows the team to add their own insights during implementation.
+
+Valuable:
+	-a user story should always represent value for the user. It should be something that the user wants or needs.
+
+Estimable:
+	-user stories should be small enough that they can be estimated. 
+	-if a user story is too big, it should be broken down into smaller user stories.
+
+Sized-Appropriately:
+	-user stories should be the right size. 
+	-they should not be too big or too small. 
+	-the team should have a good understanding of what the user story is and what it entails before starting work on it.
+
+Testable:
+	-user stories should be testable. 
+	-must be quantifiable and verifiable. 
+	-your requirement can’t be, for example, to make something prettier or more user-friendly, because there is no way to measure something’s attractiveness or user-friendliness. 
+	-should have Acceptance Criteria that can be used to verify that the user story has been implemented correctly.
 ——————————————————————————————————————————

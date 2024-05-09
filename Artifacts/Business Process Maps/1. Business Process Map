@@ -19,8 +19,11 @@ Tools to draw process maps:
 	2. Visio 
 	3. Lucidchart
 ——————————————————————————————————————————
-You can use the UPN model to draw business process maps.
+Different Models for Drawing Process Maps:
 
-https://trailhead.salesforce.com/content/learn/modules/business-process-mapping/understand-universal-process-notation?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-business-analyst-credential
+1. UPN Model
+	https://trailhead.salesforce.com/content/learn/modules/business-process-mapping/understand-universal-process-notation?trailmix_creator_id=strailhead&trailmix_slug=prepare-for-your-salesforce-business-analyst-credential
+
+2. BPMN: (Business Process Model and Notation)
+
 ——————————————————————————————————————————
-

@@ -1,0 +1,32 @@
+Activity Diagram:
+——————————————————————————————————————————
+a graphical representation using UML of the sequence of activities that take place in a system. The main purpose of an activity diagram is to model the flow of control within a system.
+
+There are 4 important elements that should be included in an activity diagram:
+
+	1. Activities: These are the actions that take place within the system.
+	2. States: These represent the different states that an activity can be in.
+	3. Transitions: These indicate the order in which the activities take place.
+	4. Objects: These are the objects that are affected by the activities.
+
+——————————————————————————————————————————
+Activity Diagrams (AD's) vs Process Workflows:
+
+1. AD's are more complex and offer more detail
+2. AD's model not only the flow of activities but also the flow of objects or data between activities
+2. AD's also show parallel or concurrent flows and alternate flows.
+3. AD's use UML while process workflows do not
+——————————————————————————————————————————
+Basic Flow vs Exception Flow vs Alternate Flow:
+
+	1. Basic flow: 
+		-as the name suggests, the basic flow 
+
+	2. Alternate flow: 
+		-actions or activities other than basic flow. 
+		-leads to same achieving the goals of the basic flow using different steps.
+		
+	3. Exception flow: 
+		-actions executed in case of errors. 
+		-used to handle errors or unexpected conditions that may occur during the execution of a program. 
+——————————————————————————————————————————

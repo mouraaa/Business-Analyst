@@ -6,4 +6,17 @@ Database Schemas:
 	-includes table names, fields, data types, and the relationships between these entities, etc
 	-the process of database schema design is also known as data modeling.
 
-——————————————————————————————————————————
+—————————————————————————————————————————
+UML: (Unified Modelling Language) 
+
+a language model that is used to visualize, plan, design and analyze the implementation of software systems. 
+—————————————————————————————————————————
+ERD: (Entity Relationship Diagram)
+
+representation of the real-world entities and their relationships with each other. 
+This is used to design databases and only databases.
+—————————————————————————————————————————
+UML VS ERD:
+
+https://www.geeksforgeeks.org/difference-between-uml-and-er-diagram/
+—————————————————————————————————————————
