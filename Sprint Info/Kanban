@@ -6,9 +6,9 @@ Kanban is still an approach to managing projects that focuses on continious smal
 
 Kanban is good for projects that deal with interruption driven work 
 	(work that is difficult to predict in advance but needs a team in place to handle it when it comes up)
-	ie: service, platform support, etc
+	ie: customer service, platform support, etc
 
-If work priority keeps changing, dont know the items that will be worked on in the future, or you find it difficult to commit to a scope fo work for 2-4 weeks (depending on sprint length), kanban might be a better choise
+If work priority keeps changing, dont know the items that will be worked on in the future, or you find it difficult to commit to a scope of work for 2-4 weeks (depending on sprint length), kanban might be a better choice
 ——————————————————————————————————————————
 Differences:
 
@@ -20,4 +20,10 @@ Differences:
 6. timelines evolve on an 'as-needed' bases
 	ie: if a higher priority item comes, you can work on it when another task is finished (in scrum, it waits for the next sprint)
 7. productivity is measured by the cycle time of the task rather than the number of story points completed in each sprint
+8. Scrum works by limiting the amount of work per sprint (every 2 weeks), while Kanban limits the amount of work per workflow state 
+	-workflow state (ie: ready, in progress, testing, ready for review, etc)
 ——————————————————————————————————————————
+Some teams like to use Scrumban
+	-a combination of scrum and kanban 
+	-combines the structure of the regular planning and review cadence of Scrum, this allows them to manage progress easier. 
+	-combines the work-in-progress limits of Kanban to respond to urgent work while minimizing disruptions that Kanban provides.

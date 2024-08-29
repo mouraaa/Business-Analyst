@@ -1,14 +1,23 @@
 Scrum Meetings:
 ——————————————————————————————————————————
 Daily Stand Up: 
-	a brief sync to provide visibility on daily progress
-	makes sure everyone is focused on the right objective 
-	blockers are mentioned and discussions can be had if there needs to be a realignment or reprioitization 
+	-a brief sync to provide visibility on daily progress
+	-makes sure everyone is focused on the right objective 
+	-blockers are mentioned and discussions can be had if there needs to be a realignment or reprioitization 
 
 Backlog Refinement:	a meeting to prepare and prioritize the backlog
-	requirement gathering
-	brake down larger items into smaller items
-	conditions of satisfaction are drafted
+	-requirement gathering
+	-brake down larger items into smaller items
+	-conditions of satisfaction are drafted
 
-Sprint Planning: planning which items can be commited to the upcoming sprint
+Sprint Planning: 
+	-planning which items can be commited to the upcoming sprint
+
+Sprint Restrospective:
+	-meeting where the team takes a look at how the sprint went
+	-team takes responsibility for their progress/failures 
+	-team decides what to adapt for in the future
+
+Sprint Demo:
+	-the team presents the finished work to product owners and stakeholders to get feedback
 ——————————————————————————————————————————
