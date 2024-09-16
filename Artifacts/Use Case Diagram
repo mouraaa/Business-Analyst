@@ -1,0 +1,17 @@
+Use Case Diagram
+——————————————————————————————————————————
+-use-case diagrams model the behavior of a system and help to capture the requirements of the system.
+-describes what the system does and how the actors use it, NOW how the system operates internally.
+
+You can model a complex system with a single use-case diagram, or create many use-case diagrams to model the components of the system.
+
+When to create:
+	Before starting a project so that everyone shares an understanding of the workers, customers, and activities of the business.
+
+Use cases:
+	-A use case describes a function that a system performs to achieve the user’s goal. A use case must yield an observable result that is of value to the user of the system.
+
+Actors:
+	-An actor represents a role of a user that interacts with the system that you are modeling. The user can be a human user, an organization, a machine, or another external system.
+——————————————————————————————————————————
+https://www.geeksforgeeks.org/use-case-diagram/

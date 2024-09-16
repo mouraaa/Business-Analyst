@@ -5,7 +5,7 @@ User story: a general explanation of a feature written from the perspective of t
 
 How to write: "As a [who], I want [what] so that [why]"
 	- the 'who' should not just be a job title. We're after the persona of that person.
-	- the 'what' should be implementation free. Shouldnt be desribing the UI. Should focus what the overall what.
+	- the 'what' should be implementation/feature specific free. Shouldnt be desribing the UI. Should focus what the overall what.
 ——————————————————————————————————————————
 User stories should follow the acronym INVEST
 
@@ -34,6 +34,12 @@ Sized-Appropriately:
 Testable:
 	-user stories should be testable. 
 	-must be quantifiable and verifiable. 
-	-your requirement can’t be, for example, to make something prettier or more user-friendly, because there is no way to measure something’s attractiveness or user-friendliness. 
-	-should have Acceptance Criteria that can be used to verify that the user story has been implemented correctly.
+	-cant be "make something prettier or more user-friendly", because there is no way to measure something’s attractiveness or user-friendliness. 
+	-needs to be written in "true/false" or "pass/fail" 
+
+——————————————————————————————————————————
+Acceptance Crtieria:
+
+	-should answer the what, not how.
+	-should be implementation/solution free (ex: cant have click a button to ...)
 ——————————————————————————————————————————

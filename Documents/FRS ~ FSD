@@ -2,7 +2,6 @@ FRS: Functional Requirements Specification (also known as the FSD)
 ——————————————————————————————————————————
 The FRS/FSD document is the most detailed and granular document of the three. It describes exactly ‘how’ the system is expected to function to satisfy all the requirements listed in the BRD and SRS.
 
-
 Main Points:
 	-contains granular functional requirements with data flow, process diagrams, UML diagrams, etc
 	-contains how the application functions based on the requested behavior
