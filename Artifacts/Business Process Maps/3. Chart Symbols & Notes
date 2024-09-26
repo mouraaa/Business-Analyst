@@ -29,10 +29,7 @@ https://www.udemy.com/course/advanced-process-flowcharts/learn/lecture/11477976?
 Off Page Reference 
 
 -can be used 2 ways
-	1. when you want to continue the flowchart onto a new page bc theres no space
-		-theres no flow through (ie: dont come back to continue the next process)
-	
-	2. when you want to use it as a flow through
+	1. when you want to use it as a "flow through"
 		ex: process -> off page ref -> process
 		the off page ref indicates to go to a diff page then come back to continue to the next process
 
@@ -40,9 +37,28 @@ Off Page Reference
 		-this is good for readability
 		-a good usecase is when theres a happy path that happens 95% of the time so the flow through can be used for a failure path 
 
+
+	2. when you want to continue the flowchart onto a new page bc theres no space
+		-theres no "flow through" (ie: dont come back to continue the next process)
+
+
 -numbers are used 
 
 https://www.udemy.com/course/advanced-process-flowcharts/learn/lecture/11478002#overview
+——————————————————————————————————————————
+Delay:
+
+You can delay for a certain time period or for an event 
+	EX: - delay for 5 minutes
+		- await activation complete message
+
+——————————————————————————————————————————
+Gateways:
+
+	x: used as a decision
+	+: used when multiple processes/tasks are done in parallel 
+	o: used when an event will happen and a decision will be based on it 
+
 ——————————————————————————————————————————
 Levels: process maps can have multiple levels. 
 
@@ -58,4 +74,6 @@ Levels: process maps can have multiple levels.
 	3. level 2 describes level 1 in more detail
 		-each level 1 task  is delved into deeper
 		-each task is represented with a letter (1.1a, 1.1b, etc)
+
+https://www.udemy.com/course/process-mapping-process-flowcharts/learn/lecture/7663262#overviewudem
 ——————————————————————————————————————————	

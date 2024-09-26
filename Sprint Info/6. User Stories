@@ -41,5 +41,6 @@ Testable:
 Acceptance Crtieria:
 
 	-should answer the what, not how.
+	-should state the intent, but not the solution
 	-should be implementation/solution free (ex: cant have click a button to ...)
 ——————————————————————————————————————————

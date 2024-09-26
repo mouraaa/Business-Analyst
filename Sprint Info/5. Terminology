@@ -3,7 +3,8 @@ Terminology:
 1. project/theme/initiatives: collection of epics that drive toward a common goal
 2. epics: large bodies of work that cant be done in one or even multiple sprints. These are broken down into smaller tasks/stories
 3. stories: short requirements or requests written from the perspective of an end user
-4. tasks are a step in the process of a story (ie: HOW the story will be completed. A story can have multiple tasks)
+4. tasks: a step in the process of a story (ie: HOW the story will be completed. A story can have multiple tasks)
+5. issue: a task/bug/story
 ——————————————————————————————————————————
 Product Backlog: 
 	-includes all work items that will be done at some point (new features, bugs, enhancements, etc)
