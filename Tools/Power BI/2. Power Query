@@ -1,0 +1,48 @@
+Power Query:
+——————————————————————————————————————————
+Best Practices:
+
+Defien clear file names and location for the files bc if you rename or move the files, it will be a headache to reconnect those sources again.
+
+Once youre in the query editor:
+	-update the file name
+	-confirm that column headers have been promoted
+	-ensure all the column data types are assigned correctly
+
+Disable report fresh for files that wont be updates often
+
+When working with large tables, only load the data you need
+——————————————————————————————————————————
+Things to Note:
+
+Transform tab is for when you want to edit the current column
+Add Column is when you want to add a new column
+——————————————————————————————————————————
+Data QA:
+	-the process of clearing inconsistencies and other anomalies within data to improve the data quality
+	-you should do this before you load your data into the front end
+	-there are 3 data profile tools available in the "View" menu
+	-note that the data profiling tools only analyze the first 1000 rows of the table
+	-to update the column profiling, click on "column profiling based on first 1000 rows" on the very bottom
+
+Column Quality:
+	-shows the percentage of values within acolumn that are valid, contain errors or empty
+	-you can hover over the quality box to see the number of records
+	-you can click the option menu (eclipse) for more options
+
+Column Distrbution:
+	-provides a sample distribution od the data contained in a column
+		ex: distinct vs unique
+			distinct: total number of different values whether they appear once or multiple times (not count)
+			unique: total number of values that appear exactly once 
+			{1,1,2,3}
+			3 distinct (1,2,3)
+			2 unique (2,3)
+
+	-you can hover over the quality box to see the number of records
+
+Column Profile:
+	-provides a holistic view of the data
+	-count, error, empty, distinct vs unique, min & max, etc
+	-you can hover over the quality box to see the number of records
+——————————————————————————————————————————

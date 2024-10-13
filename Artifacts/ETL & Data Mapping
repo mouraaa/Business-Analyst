@@ -1,6 +1,19 @@
 Data Mapping
 ——————————————————————————————————————————
-The process of matching fields from one database to another.
+ETL: 
+	-Extract, Transform & Load
+	-a data integration process that combines data from multiple sources into a single, consistent data set in a data warehouse
+	-An ETL pipeline transforms raw data to match the target system, allowing for systematic and accurate data analysis to take place in the target repository. 
+
+The traditional ETL process is broken out as follows:
+
+Extract refers to pulling a predetermined subset of data from a source such as an SQL or NoSQL database, a cloud platform or an XML file.
+
+Transform refers to converting the structure or format of a data set to match that of the target system. This is typically performed in a staging area in ways such as data mapping, applying concatenations or calculations. Transforming the data before it is loaded is necessary to deal with the constraints of traditional data warehouses.
+
+Load refers to the process of placing the data into the target system, typically a data warehouse, where it is ready to be analyzed by BI tools or data analytics tools.
+——————————————————————————————————————————
+Data Mapping is the process of matching fields from one database to another.
 
 Before data can be analyzed for business insights, it must be homogenized in a way that makes it accessible to decision makers. 
 Data comes from many sources, and each source can define similar data points in different ways

@@ -1,0 +1,74 @@
+Business intelligence (BI) 
+——————————————————————————————————————————
+BI is a combination of technology and strategy that helps businesses use data to make informed decisions. BI tools allow users to model, analyze, and visualize data to gain insights that can improve business operations and strategies.
+
+The ultimate goal of BI initiatives is to drive better business decisions that enable organizations to increase revenue, improve operational efficiency and gain competitive advantages over business rivals.
+
+Microsoft Power BI is one of those tools.
+	-you can load huge volumes of data from excel, database tables, websites, cloud services like salesforce, github, etc
+	-you can create relationships to analyze holistic performance across an entire relational model
+	-enable advanced analystics using DAX (data analysis expressions)
+	-you can build professional reports and dashboards
+——————————————————————————————————————————
+Workflow:
+
+Power Query Editor: 
+	-where raw data is extracted, transformed and loaded
+	-referred to as the "back end"
+	-where you load data from is referred to as "connectors" or "queries"
+		-excel, database tables, files, etc 
+
+Front End: 
+	-is referred to as the "front view"
+	-has 3 different views
+	
+	-model view: where data models are configured 
+	-table view: where table features and calculations can be added
+	-report view: where visuals and reports are designed
+——————————————————————————————————————————
+Storage & Connection Modes:
+
+Import Mode:
+	-tables are copied and stored into Power BI
+	-queries are fulfilled by cahced data
+	-dataset can only 1GB or less after compression if you dont have the premium version
+	-use when source data doesnt change frequently
+	-extremely fast
+	-no restrictions on files/connections to import from
+
+DirectQuery: 
+	-connects to the original data source and only grabs the data schema, column names, etc but the data stays in the original source
+	-queries are executed on demand at the original data source
+	-use when dataset is too large to be stored in memory (import)
+	-use when source data changes frequently and reports need to reflect the most recent data
+	-use when company policy states that data can only be accessed from the original source
+	-not all files/connections can be used to load files
+
+Live Connection: 
+	-connects to pre published Power BI datasets in Power BI or Azure Analysis services
+	-creates one dataset that serves as a central source of truth
+	-all team members can work together and create different reports from the same source
+	-not all files/connections can be used to load files
+	-no access to data view 
+	-no changes can be made since its an external source and Power BI is for visualization
+
+Composite Models:
+	-tables that come from a mix of import, direct query or live modes or even integrate multiple direct query tables
+	-boosts performance by setting appropriate storage for each tables
+
+——————————————————————————————————————————
+Performance & Speed:
+
+Table transformations and column calculations should ideally happen as close to the original data source as possible to optimize performance & speed
+
+In order:
+	1. data source
+	2. power query
+	3. power BI front end
+	4. published reports
+
+Power Query is more efficient than the front end bc when you load data into power bi, it takes all the raw source data, transformation steps, calculations, columns, calculations etc and determines the best way to compress all that data before it loads it into power bi's memory.
+
+when new calcualtions, columns, etc are added in power bi's front end, it isnt added into query plan and cant take advantage of the compression methods
+
+——————————————————————————————————————————

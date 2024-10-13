@@ -1,0 +1,32 @@
+Pivot tables
+——————————————————————————————————————————
+Pivot tables allow you to analyze data
+
+ex: youre a used car salesman and have an excel sheet of all the cars you have on the lot. 
+	-theres a make coloumn., (ie: honda, toyota, bmw, etc)
+	-theres a model column (ie: acccords, camrys, civics, etc)
+	-theres a color column (ie: black, silver, red, etc)
+	-theres a mileage, asking price and purchase cost column
+
+How: 
+	1. click insert tab
+	2. select Pivot Table (when you do, it will autoamtically select the table range by default but you can change that if excel didnt capture it correctly or you want specific data only)
+	3. select new worksheet so its created in a new sheet in the file
+	4. drag and drop the fields into the appropriate area (filters, coloumns, rows, values, etc)
+
+Notes:
+
+1. If you want to add an extra column (ex: a profit margin column) in the analyze tab, select the 'fields, items and sets'. This will be added into the pivot table fields and you can move it around.
+
+2. If you want to filter by largest/smallest, etc right click the field and select sort
+
+3. when you move a number field into the 'values' area, it will automatically be 'sum of' but if you want other fields like count, min, max, average, etc, select the arrow next to 'sum of []' and select 'value field settings'
+
+4. you can also see the percentage of the column/row, etc, total by right clicking the field, hovering over 'show value as' and choose an option like 'show as % of column total' 
+	
+	ex: you chose color as the rows and count of color for the values. However, you want to present the numbers as what percent of my total cars are red/black, etc
+
+5. You can also use pivot charts for visualization of the pivot tables you created
+	analyze tab -> pivot chart
+	note: if youre working with large data sets, you want to select 'deter layout update' so that it doesnt update every single time you add/remove a field until you click update
+——————————————————————————————————————————

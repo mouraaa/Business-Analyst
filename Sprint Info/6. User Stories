@@ -44,3 +44,23 @@ Acceptance Crtieria:
 	-should state the intent, but not the solution
 	-should be implementation/solution free (ex: cant have click a button to ...)
 ——————————————————————————————————————————
+Rule Based AC:
+
+Let’s say you are working on a system allowing users to create and customize their products. One of the system’s features is the ability for users to choose colors for the product. To ensure that the system works properly, you might create a set of rule-based criteria that looks something like this:
+
+	-The color palette should only display colors available to customize a particular product.
+	-The system should prevent users from choosing the same colors for different product parts.
+	-The system should prevent users from choosing clashing colors (e.g., light font color on a light background).
+	-Users should be able to preview the product with their selected colors before finalizing their customization.
+	-The system should store the chosen colors and apply them correctly to the final product.
+——————————————————————————————————————————
+Scenario Based AC:
+
+Let’s say you are working on an e-commerce project allowing users to purchase online. One of the system’s main features is the ability for users to add products to their cart and then check out. To ensure that the system works properly, you might create a set of scenario-based acceptance criteria that looks something like this:
+
+User adds product to cart
+	-product should be added to the users cart and the cart should display the correct price and quantity.
+
+User cancels checkout
+	-the system should return the user to their cart with the correct product and quantities
+——————————————————————————————————————————

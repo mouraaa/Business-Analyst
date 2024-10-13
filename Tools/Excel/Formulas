@@ -1,0 +1,78 @@
+Excel:
+——————————————————————————————————————————
+IF: (condition, value if true, value if false)
+
+=IF(A1=B1,"Match"," ")
+
+note: if theres 2 conditions:
+	IF(AND(first condition, second condition), value if true, value if false)
+——————————————————————————————————————————
+Copying a field from a different sheet
+
+= sheet name, an exclamation point, and the cell being copied
+——————————————————————————————————————————
+Math: most formulas also have an if formula. Below is an example of sumif but product, average, etc all have if as well.
+
+=SUM()
+	-adds or subtracts
+	=SUM(A2:A10)
+	=SUM(A2-A3)
+
+=SUMIF()
+	-only adds if the arguments meet the criteria
+	-ex: add the number of bananans that specifically and only tom sold
+	=SUMIF(criteria range, criteria, sum range)
+	-sum range is optional
+	-https://support.microsoft.com/en-us/office/sumif-function-169b8c99-c05c-4483-a712-1697a653039b
+
+
+=SUMIFS():
+	-same as sumif() but for multiple onditions 
+	-ex: only add the number of retailers if they reside in 11204 AND profits exceed $10,000
+	-you can add multiple criteiria ranges and criteria if required
+	=SUMIFS(range of what you are adding, criteria range, criteria, criteria range 2, criteria, etc)
+	-https://support.microsoft.com/en-us/office/sumifs-function-c9e748f5-7ea7-455d-9406-611cebce642b
+
+
+=PRODUCT(A2,B2)
+=AVERAGE(C2,C3,C4)
+
+=COUNT() -> used to count a range of cells containing numbers or dates excluding blanks
+=COUNTA() -> countS everything (numbers, dates, text, errors, etc) excludung blank cells
+
+=ROUND(value, number of digits after the decimal you want to round)
+=ROUNDUP(value, number of digits after the decimal you want to round)
+=ROUNDDOWN(value, number of digits after the decimal you want to round)
+
+=MOD(A2,3)   -> returns the remainder when a number is divided by a divisor (EX: 10 MOD 3 = 1)
+=POWER(A2,3) -> returns the result of a number raised to a certain power
+——————————————————————————————————————————
+Strings:
+
+=UPPER(A1)  -> converts any string to uppercase
+=LOWER(A1)  -> converts any string to lowercase
+=PROPER(A1) -> converts any string to proper case (first letter capital, rest lower)
+=LEN(A1) -> returns length of a string (including spaces) 
+——————————————————————————————————————————
+Time:
+
+=NOW() -> provides the current system date and time.
+=TODAY()
+=MONTH()
+=YEAR()
+=TIME()
+=HOUR() -> provides the hour from a time value as a number from 0 to 23. (0 means 12 AM and 23 is 11 PM)
+=MINUTE()
+=SECOND()
+=DATEIF() -> provides the difference between two dates in terms of years, months, or days.
+——————————————————————————————————————————
+=XLOOKUP(1,2,3)
+
+	1: what you want to lookup
+	2. where you want to look for it (a series of coloumns)
+	3. what you want to return 
+
+use when you want to reference data from other places/sheets/tabs that may not be in the same order from the original sheet
+	ex: first sheet contains employee id and second sheet has employee id and phone numbers. The second sheet is not in the same order of employee ids from the first sheet. Use xlookup to get the phone number by ID from the 2nd sheet to put in the first sheet.
+——————————————————————————————————————————
+https://www.simplilearn.com/tutorials/excel-tutorial/excel-formulas

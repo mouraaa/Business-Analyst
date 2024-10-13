@@ -31,7 +31,11 @@ Different Models for Drawing Process Maps:
 
 2. UML
 
-3. SIPOC
+3. BPMN
+
+4. Flowcharts
+
+5. SIPOC
 	-Suppliers
 	-Inputs
 	-Process
@@ -40,14 +44,14 @@ Different Models for Drawing Process Maps:
 
 	-used to gather key points to prepare for a more detailed map
 
-4. Value Stream Map
+6. Value Stream Map
 	-maps the flow of material and info thats needed to bring a product to the customer
 	-records the measurements of inputs and outputs
 	-goal is to identify waste and minimize it
 	-information is from right to left
 	-process is from left to right
 
-5. Capability Model
+7. Capability Model
 	-looks at what an organization does and can do in terms of expertise, knowledge, behaviours and processes.
 	-help organizations understand what they can and can't do, and what they need to do to reach their desired future state. 
 	-useful for understanding high level processes in the context of the overall business

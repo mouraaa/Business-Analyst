@@ -1,0 +1,80 @@
+Data Modeling:
+——————————————————————————————————————————
+Tables that are connected via relationships based on a common field
+
+Normalization: 
+	the process of organizing the tables & columns in a relational db 
+
+goal: 
+	-reduces redudancy to decrease table sizes, improve processing speed & efficiency
+	-minimize error and anomolies
+	-simplify queries for meaningful analysis
+
+In a normalized db, each table should serve a distinct and specific purpose
+	ex: product info, transaction records, customer info, store details, etc 
+——————————————————————————————————————————
+Data models generally contain 2 types of tables 
+
+1. fact/data tables:
+	-contains numerical values or metrics used for summarization 
+	-ex: sales, orders, transactions, etc 
+
+2. dimension/lookup tables:
+	-contains descriptive attributes used for filtering or grouping
+	-ex: products, customers, dates, stores, etc
+
+tip: try to organize dimension tables above data tables as it serves as a visual reminder that filters always flow downstream
+		(see filter flow section for more detail)
+——————————————————————————————————————————
+Primary & Foreign Keys
+
+Primary Keys:
+	-unique identifiers for each row in a database table
+	-relate to a foreign key
+
+Foreign Keys:
+	-relate to a primary key
+	-can have duplicate values (ex: purchase date bc a business can sell many orders on the same day)
+——————————————————————————————————————————
+Star & Snowflake Schemas
+
+1. Star Schema:
+	-the most simple and common type of data model
+	-one fact table surrounded by dimension tables
+
+2. Snowflake Schema:
+	-an extension of the star schema 
+	-a chain of relationships between dimension tables
+——————————————————————————————————————————
+There can only be one active relationship to a primary key
+	ex: the primary "date" key cannot be active to a foreign key "order date" key and foreign "stock date" key
+——————————————————————————————————————————
+Cardinality:
+	-refers to the uniqueness of values in acolumn
+	-ideally, all relationships in a data model should follow a one to many cardinality
+	-ie: one instance of each primary key and many instances of each foreign key
+	
+	-one to one relationships arent a "bad" relationship but you can simplify the model by merging both tables since it follows the normalization model
+	
+	-many to many relationships are bad bc how will the tables know which row is connected to which row in each table.
+	-many to many relationships need to be broken down through a third table
+
+	-generally speaking, fact tables should connect through dimension tables, not directly to each other
+——————————————————————————————————————————
+Filter Flow:
+
+If its single, filters can only pass from the direction of the arrow
+You can change the cross filter direction to both to allow filters to pass upstream.
+
+try to design your models with one way filters and 1:many cardinalities unless more complex relationships are absolutely necessary bc it can start to introduce ambiguity which will be extremely hard to solve 
+——————————————————————————————————————————
+When you right click on a field in a table, 'Hide in Report View' makes fields inaccessible from the report rab but still available in the data nd model views
+
+It's commonly used to:
+	1. prevent users from filtering using invalid fields
+	2. reduce clutter and hide irrelevant metrics from view
+
+Tip: Hide foreign keys in fact tables as theyre primarily used to establish relationships between tables and arent typically needed for direct visualization on reports, making it cleaner and preventing accidental misuse by users who might try to filter based on them directly.
+
+Also hide any other fields that will not be needed in a visualization to increase performance
+——————————————————————————————————————————

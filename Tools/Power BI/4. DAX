@@ -1,0 +1,55 @@
+DAX: (Data Analysis Expressions)
+——————————————————————————————————————————
+DAX is the formula language that drives and is used in the PowerBI front end. 
+It's designed specifically for analyzing relational data models.
+
+With DAX, you can:
+	-go beyond the capabilities of traditional spreadsheet formulas
+	-add calculated columns (used for filtering) & measures (for aggregation) to enhance data models 
+
+DAX is not the same as M code. 
+M is used within the power query editor & is designed for extracting, transforming and loading data
+——————————————————————————————————————————
+Calculated Columns:
+	-allows you to add new formula based columns to tables in a model
+	-generates values for each row 
+	-primarily used for filtering data in reports
+	-understands row context (they can see the info contained within each row within which they calculate)
+		ex: if statements from excel
+			if(orderquantity > 1, "multiple order", "single order")
+			the calculated column can see the orderquantity column and make decisions based on it
+
+	-since it appends a new column, it increases file size
+
+do not use calculated columns for aggregation. this is what measures are for.
+——————————————————————————————————————————
+Measures:
+	-not visible within tables
+	-can only be seen within a visualization chart
+	-does not create new data in the table themselves so doesnt increase file size
+	-evaluated based on filter context (ie: they recalculate when the fields or filters around them change)
+	-primarily used for aggregating values in reports
+
+Use measures when you want to aggregate or create values that can be analuzed in a report.
+
+There 2 types of measures 
+
+implicit measures:
+	-created when you select raw numerical fields into a report visual.
+	-only accessible withint he specific visualization in which it was created
+
+explicit measures:
+	-created when you actually write a DAX formula and define a new measure 
+	-can be referenced by other DAX calculations to create "measure trees"
+		-examples of measure trees: assuming that sum of order quantity & sum of return quantity are measures,
+		sum of order quantity - sum of return quantity = net orders 
+
+tip: try to always use explicit measures even for very simple things with auto aggregation implicitly because itll make things easier for you down the road when you want to reference them or create measure trees.
+
+tip: its best practice to create a dedicated table to store your measures to stay organized, find measures quickly and allow you to group measures into folders
+	-you can do this in 2 ways.
+		1. enter data from the report view (home) and the table will be loaded into the power query
+		2. create a measure table using DAX in the table view which wont be visisble in the power query
+
+	-preference: use option 1
+——————————————————————————————————————————	

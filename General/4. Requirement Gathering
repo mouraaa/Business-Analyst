@@ -8,6 +8,7 @@ Requirement Gathering:
 	-surveys
 	-open ended questionnares
 	-workshops
+	-shadowing
 	-document analysis: gathering information by analyzing already existing documents
 
 3. Work with the product owner to prioritize requirements
@@ -29,8 +30,8 @@ User Requirements:
 	-They're the bridge between generalized business requirements and specific solution requirements. 
 	-EX: the ability to create various reports, view order history and status, manage customer databases, etc.
 
-Solution requirements:
-	-describe specific characteristics that a product must have to meet the needs of the stakeholders and the business itself. 
+Product/Solution requirements:
+	-describe specific characteristics that a product must have to meet the requirements of the business and users. 
 	-They fall into two large groups (functional and non functional requirements)
 
 ——————————————————————————————————————————
@@ -39,6 +40,9 @@ Systems need both functional requirements and non functional requirements to be 
 1. Functional requirements: 
 	-explains how the system should work
 	-define what a product must do and what its features and functions are.
+	-Examples:
+		-The system must send a confirmation email whenever an order is placed
+		-The system must allow blog visitors to sign up for the newsletter
 
 
 2. Nonfunctional requirements: 
