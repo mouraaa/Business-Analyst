@@ -21,7 +21,8 @@ Calculated Columns:
 
 	-since it appends a new column, it increases file size
 
-do not use calculated columns for aggregation. this is what measures are for.
+Only use calcualted columns when you want to create enw data and actually stamp static fixed data to each row in a table
+Do not use calculated columns for aggregation. this is what measures are for.
 ——————————————————————————————————————————
 Measures:
 	-not visible within tables
@@ -30,13 +31,13 @@ Measures:
 	-evaluated based on filter context (ie: they recalculate when the fields or filters around them change)
 	-primarily used for aggregating values in reports
 
-Use measures when you want to aggregate or create values that can be analuzed in a report.
+Use measures when you want to aggregate or create values that can be analyzed in a report.
 
 There 2 types of measures 
 
 implicit measures:
 	-created when you select raw numerical fields into a report visual.
-	-only accessible withint he specific visualization in which it was created
+	-only accessible within the specific visualization in which it was created
 
 explicit measures:
 	-created when you actually write a DAX formula and define a new measure 
@@ -44,9 +45,9 @@ explicit measures:
 		-examples of measure trees: assuming that sum of order quantity & sum of return quantity are measures,
 		sum of order quantity - sum of return quantity = net orders 
 
-tip: try to always use explicit measures even for very simple things with auto aggregation implicitly because itll make things easier for you down the road when you want to reference them or create measure trees.
+TIP: try to always use explicit measures even for very simple things because itll make things easier for you down the road when you want to reference them or create measure trees.
 
-tip: its best practice to create a dedicated table to store your measures to stay organized, find measures quickly and allow you to group measures into folders
+TIP: its best practice to create a dedicated table to store your measures to stay organized, find measures quickly and allow you to group measures into folders
 	-you can do this in 2 ways.
 		1. enter data from the report view (home) and the table will be loaded into the power query
 		2. create a measure table using DAX in the table view which wont be visisble in the power query

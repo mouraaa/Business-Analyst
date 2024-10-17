@@ -46,3 +46,18 @@ Column Profile:
 	-count, error, empty, distinct vs unique, min & max, etc
 	-you can hover over the quality box to see the number of records
 ——————————————————————————————————————————
+Calculated Columns:
+	-allows you to add new formula based columns to tables in a model
+	-generates values for each row 
+	-primarily used for filtering data in reports
+	-understands row context (they can see the info contained within each row within which they calculate)
+		ex: if statements from excel
+			if(orderquantity > 1, "multiple order", "single order")
+			the calculated column can see the orderquantity column and make decisions based on it
+
+	-since it appends a new column, it increases file size
+
+Only use calcualted columns when you want to create enw data and actually stamp static fixed data to each row in a table
+Do not use calculated columns for aggregation. this is what measures are for.
+use measures when aggregation is necessary or to use dyanmic values in a report/visual
+——————————————————————————————————————————

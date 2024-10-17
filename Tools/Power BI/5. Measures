@@ -1,0 +1,59 @@
+Measures
+
+use measures when aggregation is necessary or to use dyanmic values in a report/visual
+——————————————————————————————————————————
+RELATED(column)  
+
+-returns related values in each row of a table based on a relationship with other tables.
+-increases file size and creates redundant data so try to nest it within measures like FILTER or SUMX
+
+ex: //returns the product price from the product lookup table into the current table that has a relationship with product lookup
+	RELATED('Product Lookup'[ProductPrice]))
+——————————————————————————————————————————
+CALCULATE (expression, filter1, filter 2, etc)
+
+Evaluates an expression that is modified with filters. The expression can be a measure.
+
+ex: Bikes Sold = 
+	CALCULATE(
+	    [Quantity Sold],
+	    'Product Categories Lookup'[CategoryName] = "Bikes")
+
+//returns the number of bikes sold within the "qantity sold" measure
+——————————————————————————————————————————
+ALL(table or column)
+
+-used to return values ignoring any filters that mightve been applied
+-usually used in the CALCULATE function to get a denominator that is used to calculate a percentage
+
+example:
+	(1) total orders =  distinctcount(order number) //gets the total number of distinct order numbers
+
+	(2) all orders = CALCULATE( 
+					[total orders], 
+						ALL('Sales Data') //gets the total number of distinct order numbers WITHOUT any filters from the sales data table
+				)
+	
+	(3) % of all orders = DIVIDE (total orders / all orders) 
+——————————————————————————————————————————
+FITLER:
+
+-returns a subset of another table with specific filters
+-usually used within a CALCULATE or SUMX functions 
+
+-Filter handles more complex filter expressions than CALCULATE (it can reference measures for example)
+-Filter iterates through each row in the table so it can be slow and computationally expensive. 
+-Only use it if calcualte function wont get the job done
+——————————————————————————————————————————
+SUMX(<table>, <expression>) //takes a table and an expression to be evaluated for each row of the table  
+
+an iterator function that iterates through every row of a specified table then adds all the row results of the given expression.
+
+EX: //calculate the total revenue by multiplying the order quantity by the product price from the product lookup table
+	Total Revenue = 
+	 SUMX(
+	    'Sales Data',
+	    'Sales Data'[OrderQuantity] * 
+	    RELATED(
+	        'Product Lookup'[ProductPrice]))
+——————————————————————————————————————————
