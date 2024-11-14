@@ -1,0 +1,31 @@
+Best Practices:
+——————————————————————————————————————————
+Query Editor:
+
+-update the file name
+-confirm that column headers have been promoted
+-ensure all the column data types are assigned correctly
+
+-disable report fresh for files that wont be updates often
+
+-when working with large tables, only load the data you need
+
+-data QA (column quality & column profile)
+
+-when youre done with all the formating in the power query, make sure you format all the dates, currencies, regions, etc in the data view.
+——————————————————————————————————————————
+Data Modelling:
+
+1. Hide foreign keys in fact tables as theyre primarily used to establish relationships between tables and arent typically needed for direct visualization on reports, making it cleaner and preventing accidental misuse by users who might try to filter based on them directly.
+
+2. Also hide any other fields that will not be needed in a visualization to increase performance
+——————————————————————————————————————————
+Create a new measure table to keep your measures
+——————————————————————————————————————————
+When you want to find a percent of something, make sure the denomenator is created using the ALL() function.
+
+the ALL() function returns all the rows in a table, ignoring all filters that have been applied. If you dont use the ALL() function, 
+
+https://www.udemy.com/course/microsoft-power-bi-up-running-with-power-bi-desktop/learn/lecture/38016308#questions/22542795
+——————————————————————————————————————————
+When you want to 

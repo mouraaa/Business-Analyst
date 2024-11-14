@@ -57,3 +57,19 @@ EX: //calculate the total revenue by multiplying the order quantity by the produ
 	    RELATED(
 	        'Product Lookup'[ProductPrice]))
 ——————————————————————————————————————————
+Time Intelligence:
+
+Performance to Date = 
+	CALCULATE(Measure, DATESYTD(Calendar[Date]))
+	//DATESYTD can be substituted for DATESQTD or DATESMTD
+
+Previous Period = 
+	CALCULATE(Measure, DATEADD(Caledar[Date], -1 , DAY))
+	//-1 is for the last day,month,quarter,year 
+	//DAY can be substituted for MONTH/QUARTER/YEAR
+
+60-Day Running Revenue = 
+	CALCULATE([Total Revenue], DATESINPERIOD('Calendar'[date], MAX('Calendar'[date]), -60 , DAY))
+	//60 can be changed to whatever number you need
+	//DAY can be substituted for MONTH/QUARTER/YEAR
+——————————————————————————————————————————

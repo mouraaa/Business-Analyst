@@ -5,12 +5,73 @@ What is current state?
 When trying to improve company systems, processes and workflows, you need to know the current state to identify areas of improvement to increase overall productivity and efficiency.
 
 Once you find do your analysis, you can create user stories to track and your work of updating current state to future state
+——————————————————————————————————————————
+What are you looking for when establishing current state?
 
+	-problems or areas of improvement
+	-automation opportunities
+	-employer/customer satisfaction
+		-this might not give the company more money or time, but satisfaction is important
+
+	-ability to streamline processes 
+		remove steps, make steps clearer, etc
+
+	-make user/system performance more efficient 
+		ex: takes a system 30 seconds to respond back * how many times the user needs to do that step within a day/week/month/year * how many users need to do that step can cost the business millions of dollars
+
+——————————————————————————————————————————
 There are multiple ways of analyzing the current state (https://ca.indeed.com/career-advice/career-development/current-state-analysis)
-	1. conducting research
+
+	1. conducting research / document analysis
+
 	2. interview professionals
+		-send out the objective & questions ahead of time so they prepare
+		-questions should start with
+			-how, give, tell, why, describe, explain, who, where, when, what, etc
+			-if you had a magic wand, what would this look like?
+			-who else should i talk to?
+			-anything else i should be aware of?
+
 	3. observations through following a person's day to day
-	4. surveys and questionnaires (good questions are open ended questions)
+		-active oberservation: 
+			-you can ask questions and interrupt their workflow. 
+			-their effiency and productivity will be decreased as a result
+
+		-passive observation: 
+			-you cant ask questions or interrupt during their workflow.
+			-must take detailed notes to ask later 
+			-you can time their workflows
+
+		-participatory observation:
+			-the observer does the process so they can experience it themselves
+			-reduced productivity bc new users vs people whove been doing it for a long time will have different efficiencies
+			-this is good bc youll ask questions that you mightve not thought of as active observation
+			-however, most likely you will be doing a happy path vs a diffuclt path since youre new
+
+	notes: 
+		-people might change how they do things if they know they're being watched. If possible, you can try to watch them without their knowledge. 
+		(ex: watching a recording of somebodys screen)
+
+		-when you schedule an active observation session, make sure to tell them the purpose of the oberservation. We're not there to judge their performance or a personal evaluation. We're looking at it from aprocess standpoint and we want to make their lives easier.   
+
+		-should ask the manager of the person you're obeserving to make sure theyre okay with the oberservation, if that time is good since there will be productivity loss, theyre the right person to observe, etc
+
+	4. surveys and open ended questionnaires 
+		-surveymoney, surveygizmo, zoho survey
+
+		-when you finish the survey, send it out to a few SME's for a beta test and ask
+		-is if theres any other questions that should be added, removed, any questions they didnt have a response they were looking for, etc 
+
+		-how, give, tell, why, describe, explain, who, where, when, what, etc
+		-if you had a magic wand, what would this look like?
+		-who else should i talk to?
+		-anything es i should be aware of?
+
+	5. brainstorming sessions
+		-how, give, tell, why, describe, explain, who, where, when, what, etc
+		-if you had a magic wand, what would this look like?
+		-who else should i talk to?
+		-anything es i should be aware of?
 
 You would then document the process and identify any gaps, obstacles or flaws in a fit-gap document.
 ——————————————————————————————————————————

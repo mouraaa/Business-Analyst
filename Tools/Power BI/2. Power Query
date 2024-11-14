@@ -2,7 +2,7 @@ Power Query:
 ——————————————————————————————————————————
 Best Practices:
 
-Defien clear file names and location for the files bc if you rename or move the files, it will be a headache to reconnect those sources again.
+Define clear file names and location for the files bc if you rename or move the files, it will be a headache to reconnect those sources again.
 
 Once youre in the query editor:
 	-update the file name
@@ -12,6 +12,8 @@ Once youre in the query editor:
 Disable report fresh for files that wont be updates often
 
 When working with large tables, only load the data you need
+
+When youre done with all the formating in the power query, make sure you format all the dates, currencies, regions, etc in the data view.
 ——————————————————————————————————————————
 Things to Note:
 
@@ -31,7 +33,7 @@ Column Quality:
 	-you can click the option menu (eclipse) for more options
 
 Column Distrbution:
-	-provides a sample distribution od the data contained in a column
+	-provides a sample distribution of the data contained in a column
 		ex: distinct vs unique
 			distinct: total number of different values whether they appear once or multiple times (not count)
 			unique: total number of values that appear exactly once 
@@ -57,7 +59,7 @@ Calculated Columns:
 
 	-since it appends a new column, it increases file size
 
-Only use calcualted columns when you want to create enw data and actually stamp static fixed data to each row in a table
+Only use calcualted columns when you want to create new data and actually stamp static fixed data to each row in a table
 Do not use calculated columns for aggregation. this is what measures are for.
 use measures when aggregation is necessary or to use dyanmic values in a report/visual
 ——————————————————————————————————————————

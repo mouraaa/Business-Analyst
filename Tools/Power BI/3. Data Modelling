@@ -21,7 +21,7 @@ Data models generally contain 2 types of tables
 
 2. dimension/lookup tables:
 	-contains descriptive attributes used for filtering or grouping
-	-ex: products, customers, dates, stores, etc
+	-ex: products, customers, dates, stores, regions, etc
 
 tip: try to organize dimension tables above data tables as it serves as a visual reminder that filters always flow downstream
 		(see filter flow section for more detail)
