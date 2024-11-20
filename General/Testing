@@ -25,7 +25,7 @@ Types of testing:
 	Smoke tests can be useful right after a new build is made to decide whether or not you can run more expensive tests, or right after a deployment to make sure that they application is running properly in the newly deployed environment.
 
 9. Sanity Testing: The objective is not to verify thoroughly the new functionality but to determine that the developer has applied some rationality while producing the software. 
-	EX: if your calculator gives the result of 2 + 2 =5, theres no point testing the advanced functionalities like sin 30 + cos 50.
+	EX: if your calculator gives the result of 2 + 2 = 5, theres no point testing the advanced functionalities like sin 30 + cos 50.
 
 10. Regression Testing: tests whether new code broke the already working application
 
