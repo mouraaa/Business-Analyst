@@ -8,10 +8,12 @@ it's a framework that helps you identify, assess, and prioritize various element
 Risks: an uncertain event that, if it occurs, can negatively or positively impact a project's objectives
 
 Examples of Common Risks:
+	no SME
 	budget overruns
 	scope creep
 	resource allocation issues 
 	Market forces such as competitor actions or changes in consumer preference, can also create risks
+	conflict between goals/scope/stakeholders
 
 Understanding these examples can help managers take pre-emptive measures.
 The goal is to create a comprehensive list of potential risks that could impact the project.
@@ -22,7 +24,13 @@ Identifying Risks:
 Analyzing Risks:
 	Once risks are identified, they should be analyzed both quantitatively and qualitatively. 
 	Quantitative analysis looks at potential cost and time impacts
-	Qualitative analysis gauges the likelihood and severity.
+	Qualitative analysis gauges the likelihood and severity. (very low to very high or 1-5)
+
+Risk Impact:
+	once youve analyzed the risks, you want to know what the impact would be if these risks happens.
+
+Prioritize Risks:
+	Rank by probability and impact. Higher risks go toward the top.
 
 Mitigating Risks:
 	Mitigation strategies may include contingency planning or allocating additional resources. 

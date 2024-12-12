@@ -72,3 +72,5 @@ Power Query is more efficient than the front end bc when you load data into powe
 when new calcualtions, columns, etc are added in power bi's front end, it isnt added into query plan and cant take advantage of the compression methods
 
 ——————————————————————————————————————————
+If you have questions, you can talk to michael.z.webster
+He led the PowerBI seminar at Accenture that I attended

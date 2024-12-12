@@ -23,17 +23,27 @@ Scope Creep: continuous or uncontrolled growth in a project's scope.
 ——————————————————————————————————————————
 Project Scope Statement: a written document of your project scope. Depending on the complexity of your project, your scope statement could be a section of your project plan, or it could be its own stand-alone document. 
 
+The project scope defines what you will do, doesnt define HOW you will fix the problem.
+ex: need to enhance our current software to support the new support representative user group
+
 Steps:
 	1. start with project objectives/deliverables
 	2. make a resource management plan (how you'll acquire, develop, use, manage, control, and release the resources you need for a particular project)
 		https://asana.com/resources/resource-management-plan
-	3. boundaries/risks (budgets, resources etc)
+	3. boundaries/risks (budgets, resources, skills, technology, regulations, schedule, etc)
 	4. what will NOT be covered
 	5. write draft
 	6. establish a change request/control process if necessary
 	7. review with stakeholders
 
-based on project complexity, the project scope statement can be a bullet pointed list. a paragraph or a full blown SOW
+based on project complexity, the project scope statement can be a bullet pointed list. a paragraph or a full blown SOW.
+
+You can also try to scope each statement under one of three.
+	1. process
+	2. people (if people need to eb trained, etc)
+	3. technology
+
+Make sure all identified business needs addressed.
 ——————————————————————————————————————————
 Example: You're rebuilding your company website. Here’s what the project scope might look like:
 
