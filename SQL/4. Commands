@@ -1,0 +1,192 @@
+COMMANDS:
+------------------------------------------------------------------------------------------------
+create database
+	EX:  create database lab1
+
+create table    	  
+	EX1: create table t1(id int, name varchar(10)) 
+		-string isnt a thing in database, must use varchar() with the number of characters you wish to allow
+
+	EX2: create table customer(customer_id INT NOT NULL, customer_name varchar(255) NOT NULL, total_price REAL NOT NULL, PRIMARY KEY(customer_id)) 
+		-REAL = DOUBLE IN SQL
+
+insert into       	
+	EX:  insert into table_name(id,name) values (3124, 'Adam') 
+		-single quotes are used because name is varchar
+
+------------------------------------------------------------------------------------------------
+select ... from  	  
+	EX:  Select name from t1 where id = 3 
+
+select * from table_name        
+	shows everything in the table
+
+------------------------------------------------------------------------------------------------
+delete from
+	EX:  delete from t1 where id = 3
+	EX2: delete from t1 
+		-clears all rows in the table
+
+drop table                     
+	drops the entire table											
+
+------------------------------------------------------------------------------------------------
+distinct						
+	shows only distinct names, no replicas
+	EX: select distinct name from t1
+
+unique 							
+    only accepts unique entrys for that specific variable
+	EX: if you try to add the same variable, itll give you an error			
+------------------------------------------------------------------------------------------------
+primary key
+    makes a variable into primary key 
+	EX: create table vendor(v_code integer not null unique, v_name varchar(35) not null, primary key(v_code));																																		
+
+foreign key 	
+	makes a variable into foreign key 		
+	EX: create table product(p_code integer not null unique, p_name varchar(35) not null, foreign key(p_code));																																															
+------------------------------------------------------------------------------------------------
+check 				
+    a constraint to check if the value entered into the table can be entered based on the condition 
+	EX: create table discounts(discount float not null CHECK(discount >= 0 and discount <= 100))
+	checks if discount is within 0 to 100, if not, an error rises
+
+------------------------------------------------------------------------------------------------
+count 		
+	shows how many rows in a table
+	
+	EX1: select count(*) from agent
+		shows the amount of rows from agent
+
+	EX2: select count(agent_name) from agent where agent_id between 10 and 20;
+
+	EX3: select count(distinct agent_name) from agent;
+
+	EX4: select agent_name, count(agent_name) from agent GROUP BY agent_name;
+		shows the count of each agent_name
+------------------------------------------------------------------------------------------------
+or                              
+	select * from agent where agent_id = 11 or agent_name = 'Bob';
+
+between 						
+	between is inclusive so it will include in the below example 11 and 22
+	EX: select * from agent where agent_id between 11 and 22;
+
+where not
+	returns anything that is not 
+	must have parenthesis if multiple conditions
+	EX: select * from agent where not (agent_id = 17 or agent_name = 'Bob')
+
+%                               
+	any number of characters 
+	EX: select * from agent where agent_name LIKE 'e%'; 
+
+like 							
+	looks for a pattern
+	
+	EX1: select * from agent where agent_name LIKE '_an_'; 
+		returns any agent whose name has 4 characters and has 'a' as the second char and 'n' as the third char
+	
+	EX2: select * from agent where agent_name LIKE 'J%'; 
+		returns any agent whose name starts with 'J'
+
+	EX3: select * from agent where agent_name LIKE '_a%'; 
+		returns any agent whose name you dont know what char starts with, but has 'a' as the second char and if any characters afterwards
+
+having 							
+	use this term instead of where for conditions when using GROUP BY
+	EX: select customer_id, count(price) from invoice GROUP BY customer_id HAVING customer_id > 10;			
+		shows the customer_id and how many products that customer bought but only if customer_id > 10																
+
+in / not in
+	checks if something is in/not in a list
+	EX: select * from invoice where item_desc in (select item_desc from invoice where customer_id = 10);
+		select everything bought by customer 10 and anyone who bought the same item(s) as 10															
+
+ALL 							
+    EX: select * from invoice where price > ALL (select price from invoice where customer_id = 10);
+		select all from invoice where the price is greater than all the prices of customer_id = 10
+
+
+ANY 				
+	select * from invoice where price > ANY (select price from invoice where customer_id = 15);
+		select all from invoice where the price is greater than any the prices of customer_id = 10
+
+
+------------------------------------------------------------------------------------------------
+UPPER() 						
+	returns the uppercase value
+	EX: select upper(agent_name) from agent; 
+
+LOWER() 						
+	returns the lowercase value
+    EX: select lower(agent_name) from agent; 
+
+MIN() 							
+	returns the minimum value
+	EX: select min(agent_id) from agent; 
+
+MAX() 							
+	returns the maximum value
+	EX: select max(agent_id) from agent; 
+
+AVG() 							
+   returns the average value
+   EX: select avg(agent_id) from agent
+
+SUM()
+   basically use sum to sum up all the coloumns and return one answer
+   EX: Select sum(agent_id) from agent; 
+
+::int
+	Converts into an int
+	EX: select sum(price*qty)::int  from revenue;
+
+------------------------------------------------------------------------------------------------
+DATE/TIME: (you can use these instead of manually creating date/time attributes)
+
+select CURRENT_DATE				-->   shows the current date
+select CURRENT_TIME        	    -->   shows the current date
+select NOW()					-->   shows the current date
+
+values(CURRENT_DATE) 			-->   shows the current date
+values(CURRENT_TIME)			-->   shows the current time
+values(NOW()) 					-->   shows the current date and time
+
+create table date(date date) #
+	the first date is attribute name and second date is keyword date
+
+insert into t1(date) values (current_date)
+
+------------------------------------------------------------------------------------------------
+Show metadata about the table: 
+
+EX: select column_name, data_type, character_maximum_length FROM information_schema.columns where table_name = 'pricelist';
+	name of data table HAS to be lowercase or else itll show nothing
+
+ALTER THE METADATA 
+examples: you want to add an extra column, drop a column, change varchar from 30 to 40, or you forgot to create one of the variables as primary key)
+
+	EX1: ALTER TABLE pricelist ALTER p_descript TYPE  VARCHAR(40);   
+	EX2: ALTER TABLE pricelist ADD p_qty int;
+	EX3: ALTER TABLE priceList DROP column p_qty
+	EX4: ALTER TABLE pricelist ADD PRIMARY KEY(p_code);
+
+UPDATING ROW INFO
+	EX: UPDATE pricelist SET p_descript = 'graphic tshirt', p_price = 45 where p_code = 100;
+
+ALTER VS UPDATE:
+	ALTER changes metadata (column_name, data_type, character_maximum_length, primary key, etc)
+	UPDATE: changes actual data inside the table
+------------------------------------------------------------------------------------------------
+CREATE VIEWS: 
+
+lets say you use the same query everyday and the query is super long, just create a view of that query and instead write "select * from view_name"
+
+EX: CREATE VIEW stats AS SELECT * FROM priceList WHERE p_price < 100;
+
+now we have a table with the query "SELECT * FROM priceList WHERE p_price < 100)"
+now writing "SELECT * FROM stats" is much easier to write than the original query
+usually the query is much longer than the provided example so you would use a view
+------------------------------------------------------------------------------------------------

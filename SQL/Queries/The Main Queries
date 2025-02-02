@@ -1,0 +1,36 @@
+The 6 Main Queries: 
+——————————————————————————————————————————
+SELECT: 
+	-identifies the column(s) you want your query to select for your results
+	-can select multiple columns sepearated by commas
+——————————————————————————————————————————
+FROM: 
+	-identifes the table your query will pull from
+	-can only choose on table using FROM
+	-if you want multiple table, you need to use JOIN  
+——————————————————————————————————————————
+WHERE: 
+	-specifies individual record filtering criteria
+	-optional
+——————————————————————————————————————————
+GROUP BY: 
+	-optional
+	-removes duplicates and groups by a certain attribute and can only be used with aggregate functions
+	
+	EX: SELECT customer_id, avg(price) from invoice GROUP BY customer_id;
+		group each of the customer_ids together and use the aggregate function avg to the avg price each person paid
+——————————————————————————————————————————
+HAVING: 
+	-specfies group filtering crietira for filtering your results
+	-optional
+	-can only be used when GROUP BY is present
+——————————————————————————————————————————
+ORDER BY: 
+	-specifies the order in which your query results are displayed
+	-optional
+
+	EX: select * from customer ORDER BY customer_name DESC, customer_id DESC, phone;
+		if 2 customers have the same name, then oredr them by their customer_id in descending order, but if they have the same customer_id, sort them by ascending phone #
+
+——————————————————————————————————————————
+example: SELECT columnName FROM tableName WHERE logicalCondition GROUP BY coumnName HAVING logicalCondition ORDER BY columnName
