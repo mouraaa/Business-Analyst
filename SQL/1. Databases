@@ -22,3 +22,8 @@ some are free and opensource while others are not
 Most SQL statements are universal and can be applied to all different db platforms but some statements are specific.
 
 ——————————————————————————————————————————
+Comments can be added by using
+
+-- is used for a single line comment 
+/* is used for multi line comments
+——————————————————————————————————————————

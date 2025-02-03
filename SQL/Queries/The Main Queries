@@ -15,10 +15,17 @@ WHERE:
 ——————————————————————————————————————————
 GROUP BY: 
 	-optional
-	-removes duplicates and groups by a certain attribute and can only be used with aggregate functions
+	-removes duplicates and groups by a certain attribute 
+	-most of the time is used with aggregate functions
 	
 	EX: SELECT customer_id, avg(price) from invoice GROUP BY customer_id;
 		group each of the customer_ids together and use the aggregate function avg to the avg price each person paid
+
+	EX2: SELECT rental_duration, rating, count(film_id) from film group by rental_duration, rating
+		count the number of movies that are in each specific rental duration and rating at the same time.
+		ie: 49 moviess are rating G AND rented out 3 days
+			33 movies are rating G AND rented out 5 days 
+		https://www.udemy.com/course/mysql-for-data-analysis/learn/lecture/15211862#questions
 ——————————————————————————————————————————
 HAVING: 
 	-specfies group filtering crietira for filtering your results
