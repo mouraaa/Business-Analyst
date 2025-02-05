@@ -12,6 +12,7 @@ FROM:
 WHERE: 
 	-specifies individual record filtering criteria
 	-optional
+	-EX: select * from customer where customer_id > 30
 ——————————————————————————————————————————
 GROUP BY: 
 	-optional
@@ -29,11 +30,18 @@ GROUP BY:
 ——————————————————————————————————————————
 HAVING: 
 	-specfies group filtering crietira for filtering your results
-	-optional
 	-can only be used when GROUP BY is present
+	-optional
+	-EX: select customer_id, COUNT(rental_id) as total_rentals from rental group by customer_id HAVING COUNT(rental_id) >= 30
+		this groups customer id's and only shows customers that rented 30 or more films
 ——————————————————————————————————————————
 ORDER BY: 
 	-specifies the order in which your query results are displayed
+	-the default is ascending so if you use "ORDER BY" and dont say "ORDER BY ASC", it'll work the same
+	-you can also modify it to ORDER BY DESC
+	-if you use multiple criteria the server will prioritize the first coloumn then other coloumns as tie breakers
+	-EX: ORDER BY created_date DESC, amount DESC 
+		this will order by created date and in cases where the created date is the same, then the server will order by amount in descending order 
 	-optional
 
 	EX: select * from customer ORDER BY customer_name DESC, customer_id DESC, phone;
