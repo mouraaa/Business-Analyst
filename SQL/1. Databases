@@ -1,0 +1,29 @@
+Databases
+——————————————————————————————————————————
+DB's are systems that allow users to store and organize data 
+Useful when dealing with large amounts of data
+
+DB's have/can 
+	1. data integrity
+	2. handle massive amounts of data
+	3. quickly combine different datasets
+	4. automate steps 
+	5. can support data for websites and applications
+
+There's no specific limit to how many tables / rows / attriibutes 
+The only real boundary is how much space you have on your hard disk
+——————————————————————————————————————————
+SQL (structured query language) 
+	- the programming language used to communicate with relational databases
+
+postgreSQL / mySQL / SQL Server / Oracle / are different database engines 
+some are free and opensource while others are not
+
+Most SQL statements are universal and can be applied to all different db platforms but some statements are specific.
+
+——————————————————————————————————————————
+Comments can be added by using
+
+-- is used for a single line comment 
+/* is used for multi line comments
+——————————————————————————————————————————

@@ -1,0 +1,50 @@
+CONSTRAINTS: constraints are part of relations
+------------------------------------------------------------------------------------------------
+Domain: 
+	a set of possible values for a given attributes EX: GPA -> [0,4]
+
+Cardinality: 
+	expresses the min and max of an entity's occurences (EX: a professor teaches 4 classes, so a professors primary key shouldnt appear more than 4 times)
+
+Not Null: 
+	the attribute cannot be left empty 
+
+Super Key / Composite Keys:
+	an attribute or a combination of attributes that represents an entire entity/row/tuple
+	EX: student_id + first_name + last_name or first_name + last_name
+
+Canidate keys are a subset of super keys that can be unique so the first one would work since it cant be replicated but the second one wouldnt
+
+Primary Key:
+	Each table must have a primary key attribute which cannot be null, changed and must be unique across the specific table
+	ou need a primary key to identify each entity
+
+Secondary Key: 
+	a key other than primary key that can be used to retrieve data
+	EX: not every customer can remember their customer id so they would use first and last name as well as address and phone number to verify themselves
+
+Foreign Key:
+	an identifier for an entity for which a specific instance belongs (can be repeated or null)
+	required to create relationships between tables
+	a foreign key is a foreign key in one tablr but the primary key in the other table
+	Example:
+		Order number 14 belongs to customer 207
+		order number 15 belongs to customer 222
+		14 and 15 would be primary keys 
+		207 ane 222 are called a foreign keys which will reference someone in the customer table
+
+Cascades:
+	(A PART OF FOPREIGN KEYS)
+	On Cascades: delete - deletes the entire row 
+	On Cascades: nullify - doesn't delete the row, but deletes the reference (the foreign key)
+
+	EXAMPLE: You have a facebook account and want to delete it 
+	The account table will check if 'on cascades' is set to delete and if it is, the entire row will be deleted
+	Then, it will check if that account id is referenced in any other table and if it is, it will check that tables 'on cascade' constraint
+	If it's also set to delete, it will delete that row and check if any other table was using the foreign key of the most recently deleted row and so on so forth
+
+	If any of the tables on cascade is set to nullify, the row wont be deleted, but the reference will be deleted.
+	EXAMPLE:
+	You delete you account, but the billing table is set to nullify, the database will no loner know who placed this order but 
+	it will have all the other attrobutes of the order (price/paymentetc..)
+------------------------------------------------------------------------------------------------
